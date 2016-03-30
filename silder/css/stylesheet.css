@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	margin:0px;
+	padding:0px;
+}
+
+img
+{
+	border:none;
+}
+
+p,span,h1,h2,h3,h4,h5,h6,td,div,ul,li
+{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	list-style:none;
+}
+
+a,a:hover
+{
+	text-decoration:none;
+	color:#000;
+}
+
+
+/*Site Start*/
+
+#wrapper
+{
+	width:100%;
+	height:auto;
+	float:left;
+	background:url(../images/header-without-shadow.png) top repeat-x;
+}
+
+#header
+{
+	width:100%;
+	height:auto;
+	float:left;
+	background:url(../images/header-bg.png) center top no-repeat;
+}
+
+#content
+{
+	width:100%;
+	height:auto;
+	float:left;
+	background:url(../images/content-bg.png) repeat;
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////
+                               Home Page
+/////////////////////////////////////////////////////////////////////////////*/
+
+/*Header Start*/
+
+.header
+{
+	width:1024px;
+	height:auto;
+	margin:0px auto;
+}
+
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>切换</title>
+		<style type="text/css">
+			body{
+			            background-color: #CCCCCC;
+			            text-align: center;
+			        }
+			        .active{background-color: #FFAA00;}
+			        #box{
+			             margin:0 auto;
+			             width: 200px; height:200px;position: relative;
+			        }
+			        
+			        #box1{
+			            background-color: #AAD83E; width: 200px; height:200px;display: block;position: absolute;top: 0;left: 0;
+			        }
+			        #box2{
+			            background-color: #0030CE; width: 200px; height:200px;display: none;position: absolute;top: 0;left: 0;
+			        }
+			        #box3{
+			            background-color: #FFFF00; width: 200px; height:200px;display: none;position: absolute;top: 0;left: 0;
+			        }
+		</style>
+		<script type="text/javascript">
+			//window.onload = 
+			
+			function TabSwitch(id){
+			           var omain = document.getElementById(id);
+			           this.obtn = omain.getElementsByTagName("button");
+			           //var obox = document.getElementById("box"); 
+			           this.odiv = omain.getElementsByTagName("div");
+
+						for (var i = 0; i < this.obtn.length; i++) {
+							this.obtn[i].index = i;
+							this.obtn[i].onclick = function(){
+								TabGo;
+							}; 
+						};
+						};
+						
+						
+						TabSwitch.prototype.TabGo = function () {
+							for (var i = 0; i < this.obtn.length; i++) {
+								this.odiv[i].style.display = "none";
+								this.obtn[i].className = "";
+							}
+							this.[obtn.index].style.display = "block";
+							this.obtn.className = "active";
+						};
+		</script>
+	</head>
+
+	<body>
+		<!--<p><a href="javascript:;" onclick="javascript:addFavorite();">加入收藏</a></p>-->
+		
+		<div id="main">
+			<button type="button">1</button>
+			<button type="button">2</button>
+			<button type="button">3</button>
+
+			
+				<div id="box1">
+					11111111
+				</div>
+				<div id="box2">
+					2222222222
+				</div>
+				<div id="box3">
+					33333333333
+				</div>
+			
+		</div>
+	</body>
+
+</html>

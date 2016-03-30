@@ -1,0 +1,119 @@
+html,body,div,span,
+applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dd,dl,dt,li,ol,ul,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
+	margin: 0;
+	padding: 0;
+}
+
+ol,ul {
+	list-style: none;
+}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+#body{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.main{
+	float: left;
+	width: 1024px;
+	background-color: #EFEFEF;
+	border: 1px solid #222222;
+}
+.main .head{
+	width: 1024px;
+	height: 30px;
+	background-color: blue;
+}
+.main-menu{
+	float: left;
+}
+.main-menu .left{
+	float: left;
+	width: 200px;
+	height: 1000px;
+	background-color: blue;
+	
+}
+.main-menu .left ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    color: #FFFFFF;
+  
+}
+.main-menu .left ul li{
+    float: left;
+}
+.main-menu .left ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu .left .ul_mune .list-title ol{
+    display: none;
+    text-align:center;
+}
+.main-menu .left .ul_mune .list-title ol li{
+    margin-left: 20px;
+    margin-top:3px;
+    width: 150px;
+    height: 30px;
+    line-height:30px;
+    border: 1px solid #FFA8A8;
+}
+.main-menu .left .ul_mune ul li{
+    width: 200px;
+    height: 30px;
+    line-height:30px;
+    background: #0092DC;
+    border: 1px solid #FF0000;
+}
+.div_title{
+    margin-top:5px;
+    border: 1px solid #CCCCCC;
+    width: 200px;
+    font-size:14px;
+    font-weight: bold;
+    color:#fff;
+    height: 30px;
+    line-height:32px;
+    padding-left: 40px;
+    background: no-repeat;
+    text-align:left;
+    font-family:"微软雅黑";
+}
+.addimg{
+   background: url("../img/2.png") 0 50% no-repeat;
+}
+.reimg{
+    background: url("../img/1.png") 0 50% no-repeat;
+}
+.list-style{
+    display: block;
+    padding-left: 40px;
+    width: 150px;
+    height: 32px;
+    background: no-repeat;
+}
+
+
+
+
+
+
+
+.main-menu .right{
+	float: left;
+	width: 824px;
+	height: 1000px;
+	background-color: #74BA11;
+}

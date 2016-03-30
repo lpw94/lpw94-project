@@ -1,0 +1,138 @@
+/*video*/
+#vedio{width:100%;height: auto;overflow-x: hidden;min-height: 650px;}
+.bar{width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;left: 0;top: 0;}
+.video-btn{width: 80px;height: 80px;border:none;border-radius: 50%;background: #fff;position: absolute;top: 45%;left: 45%; line-height: 72px;text-align: center;}
+.mp4{width: 100%;height: 100%;}
+.flash{width:100%;height:100%;position: relative}
+.flash .bar .video-msg{text-align: center;color:#fff;font-size: 18px;  line-height: 30px; margin: 15% 0 0;}
+.flash .bar .video-msg h2{font-size: 40px;font-weight: bolder;text-transform: uppercase;}
+.flash .bar .video-click{text-align: center;padding: 60px 0;color:#fff;}
+.flash .bar .video-click span{line-height: 36px;background: #edae49;text-align: center;text-transform: uppercase;padding: 10px 20px;font-size: 14px;}
+.flash .bar .video-click span:hover{opacity: 0.8;cursor: pointer}
+.flash .bar .video-click p{margin-top: 20px;}
+.flash .bar .video-click p a{color: #fff;}
+.flash .bar .video-control,.flash .bar .video-about{text-align: center;color:#fff;  min-height: 92px;}
+.flash .bar .video-control .video-click-control{width: 50px;height: 50px;border: 1px solid rgba(255,255,255,0.5);border-radius: 50%;position: relative;text-align: center;display: block;margin: auto}
+.flash .bar .video-control .video-click-control i{width:0px; height:0px; border-left:15px solid #fff; border-bottom:15px solid transparent; border-top:15px solid transparent; font-size:0px; line-height:0px;display: block;  position: absolute; left: 18px; top: 9px;}
+.flash .bar .video-control p{line-height: 42px;display: none;}
+.flash .bar .video-about p{line-height: 42px;font-size: 14px;margin-top: 40px;}
+.flash .bar .video-about h1{font-weight: bolder;font-size: 40px;}
+.flash .bar .video-control .video-click-control:hover{ border-color:rgba(255,255,255,1) }
+.flash .bar .barbox{width:700px;height:400px;position: absolute;left: 50%; top: 42%;margin-left: -350px;margin-top: -200px;background: #000;display: none;z-index: 2}
+.bar-second{width: 100%;height: 100%;position: fixed;z-index:1;left: 0;top: 0;background: rgba(0,0,0,0.7);display: none;}
+.flash .bar .menber-detial{position: absolute; top: 0; left: 50%; margin-left:-512px;z-index: 2;display: none;}
+.flash .bar .menber-detial .member-left{background: #fff;padding: 40px;font-size: 14px;position: relative;}
+.flash .bar .menber-detial .member-left h1{font-size: 40px;font-weight: bolder;margin-bottom: 15px;}
+.flash .bar .menber-detial .member-left p{line-height: 30px;font-size: 20px;}
+.flash .bar .menber-detial .member-left span{display: block;margin: 40px 0;}
+.flash .bar .menber-detial .member-left .putin{height: 40px;width: 100%;border: 1px  solid #818284;padding-left:5px;margin-bottom: 20px; }
+.flash .bar .menber-detial .member-left a{display: block;height: 40px;width: 100%;margin-bottom: 20px;text-align: center;color: #fff;background:#f47857;line-height: 40px;font-size: 16px;}
+.flash .bar .menber-detial .member-left a:hover{text-decoration: none;background:#edae49; }
+.flash .bar .menber-detial .gray{background: #f7f7f7;}
+.flash .bar .menber-detial .gray .middle{width: 40px;height: 40px;display: block;border-radius: 50%;background: #c4c3c3; color: #fff;text-align: center;  position: absolute; top: 50%; left: -17px; line-height: 40px; font-style: normal; margin-top: -20px;}
+.flash .bar .menber-detial .gray .close{width: 20px;height: 20px;display: block;font-weight: bolder;position: absolute;  right: 5px; top: 5px; font-size: 30px;}
+/*price*/
+.price-title{font-size: 40px;text-align: center;font-weight: bolder; color: #000;margin: 50px 0;}
+.price{text-align: center;padding: 0 95px;}
+.price .pri-top{border-bottom: 1px  solid #ddd;padding-bottom: 15px;}
+.price .pri-top h1{font-size: 30px;margin-bottom: 30px;}
+.price .pri-top p{color:#000;line-height: 30px;font-size: 14px;}
+.price .pri-num{margin-top: 40px;font-size: 40px;font-weight: bolder;}
+.price .pri-num sub{font-size: 14px; color: #c4c3c3;}
+.price .pri-numadd{color: #c4c3c3}
+.price span{display: block;line-height: 28px;margin: 30px 0;}
+.price .pri-btn{height: 40px;width: 100%;line-height: 40px;display: block; color: #fff;background:#edae49;margin: 40px 0 20px }
+.price .pri-btn:hover{text-decoration: none;opacity: 0.8;}
+
+/*membership*/
+.ship-bg{background: #f0f0f0;padding-bottom: 50px;}
+.membership .ship-head .ship-item{padding: 20px 15px;background: #fff;  text-align: center;position: relative;}
+.membership .ship-head .ship-item p{font-size: 14px;margin: 20px 0 0;}
+.membership .ship-head .ship-item img{width: 97%}
+.membership .ship-head .ship-item i{width:0px; height:0px; border-left:20px solid transparent; border-right:20px solid transparent; border-top:20px solid #edae49;; font-size:0px; line-height:0px;   position: absolute; bottom: -18px; left: 50%;margin-left:-20px;display: none;}
+.membership .ship-head .ship-item-bg{background:#edae49;color:#fff; }
+.membership .ship-head .ship-item:hover{background:#edae49;color:#fff;}
+.ship-left{padding-right: 60px;margin: 20px 0;}
+.ship-left .sleft-title{padding: 20px 0;font-size: 14px;line-height: 24px;  margin-right: 90px;}
+.ship-left ul{padding: 20px 0;border-top: 1px solid #818284;}
+.ship-left ul li{margin: 20px 0;line-height: 24px;}
+.ship-left a{display: block;width: 100%;height: 40px;border:1px solid  #818284;color: #818284;line-height: 40px;text-align: center;font-size: 16px;opacity: 0.8;}
+.ship-left a:hover{opacity: 1;text-decoration: none;}
+.slideBox{ position:relative; border:1px solid #ddd;   width: 80%; margin: 40px;height: 336px;}
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute;  left: 43%;; bottom:-45px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:8px;  width:12px; height:12px; line-height:14px; text-align:center; background:#bbb; cursor:pointer; border-radius: 50% }
+.slideBox .hd ul li:hover{background: #999;}
+.slideBox .hd ul li.on{ background:#edae49; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ display:block; width:438px;height: 334px;}
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:-65px; top:50%; margin-top:-25px; display:block; filter:alpha(opacity=50);opacity:0.5;width: 50px;height: 50px;background: url(../images/tmp/prev.png)no-repeat 0 0;background-size: 40px; }
+.slideBox .next{ left:auto; right:-65px;background: url(../images/tmp/next.png)no-repeat 0 0;background-size: 40px;}
+.slide-item{ display: none;width: 100%;}
+.slideBox .prev:hover,
+.slideBox .next:hover{opacity: 1}
+
+/*location*/
+.city{background: #edae49;padding-bottom: 40px;overflow-x:auto }
+.city .city-title{text-align:center;margin: 40px 0; color:#fff;}
+.city .city-title h1{font-size: 40px;font-weight: bolder;text-transform: uppercase;margin: 20px 0 40px;}
+.map{background: url("../images/tmp/map.png") 50% 50% no-repeat;  position: relative; margin: auto; width: 969px; height: 329px; background-size: 969px auto;}
+.map ul li{position: absolute;cursor: pointer;}
+.map ul .town i{width: 8px;height: 8px;border-radius: 50%;background: #000;  display: block;}
+.map ul .town .name{height: 40px;border-left: 1px  solid #000;  position: absolute; left: 3px; top: 0;}
+.map ul .town .name a{display: block; position: absolute; top: 100%; text-align: left; left: -3px; color: #252729; white-space: nowrap; opacity: 0.7;text-transform: uppercase; height: 16px; line-height: 16px;}
+.map ul .town .name a:hover{text-decoration: none;}
+.map ul .town:hover a{color:#000; font-weight:500;opacity: 1}
+.map ul .newyork{left: 477px; top: 145px;}
+.map ul .austin{left: 255px; top: 260px;}
+.map ul .austin .name{height: 60px;}
+.map ul .chicago{ left: 348px; top: 130px;}
+.map ul .chicago .name{height: 90px; top: auto;bottom: 0;}
+.map ul .chicago .name a{top: auto;bottom: 100%;}
+.map ul .london{ right: 301px; top: 94px;}
+.map ul .london .name{height: 60px; top: auto;bottom: 0;}
+.map ul .london .name a{top: auto;bottom: 100%;}
+.activity{background: url("../images/tmp/events.jpg") 0 0 no-repeat;  background-size: cover; min-height: 500px;padding: 50px 0;}
+.activity .events-title{text-align: center;}
+.activity .events-title h3{font-size: 40px; color: #fff;line-height: 60px;}
+.activity .act-item{border: 1px solid #fff;position: relative;padding: 0; margin-top: 20px;}
+.activity .act-item:hover{border: 1px  solid #edae49;}
+.activity .act-item a:hover{text-decoration: none;}
+.activity .act-item .date{width: 80px;text-align: center;color:#d3596c;padding:20px 15px;background: #fff;font-size: 14px;line-height: 30px;position: absolute;  height: 100%;}
+.activity .act-item .date span{font-size: 30px;font-weight: bolder;}
+.activity .act-item .on{background:#edae49;color:#fff;}
+.activity .act-item .info{padding: 15px 15px 15px 100px;max-width: 85%; color: #fff;text-align: left;line-height: 24px;}
+.activity .act-item .info h1{font-size: 30px;font-weight: bolder;}
+.activity .act-item .info p{font-size: 12px;margin: 24px 0;}
+.activity .act-item .attend{text-transform: uppercase;display: block;color:#fff;position: absolute;top: 0;right: 0;padding: 15px;font-size: 14px;}
+.activity .event-bottom{text-align: center;margin: 20px 0;display: block}
+.activity .event-bottom a{color:#f7f7f7;}
+
+/*移动设备（小于768px）*/
+@media (max-width: 768px) {
+    /*flash*/
+    .flash .bar .menber-detial{left: 0;margin-left: 0;}
+    .flash .bar .menber-detial .gray .middle{display: none;}
+    .flash .bar .menber-detial .gray .close{top: -100%;}
+    .flash .bar .menber-detial .gray .middle{display: none;}
+    .price .pri-btn{margin: 40px 0 80px}
+    .ship-bg .row{margin: 0}
+    /*membership*/
+    .ship-bg { background: #fff; }
+    .slide-item { display: none; }
+    .ship-bg .ship-list { margin: 0; }
+    .membership .ship-head .ship-item:hover { background: #fff; color: #000; }
+    .membership .ship-head .ship-item-bg { background: #fff; color: #000 }
+    .membership .ship-head .ship-item img { width: 80px;}
+    /*location*/
+    .activity .act-item .attend{bottom: 0;right: 0; top: auto;}
+}
+@media (min-width: 768px){
+    .col-md-2{margin-right:3%;}
+}
+@media (min-width: 992px){
+    .col-md-2{margin-right:3%;}
+}
+

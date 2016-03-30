@@ -1,0 +1,116 @@
+/* reset css start*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, main, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video{margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+main, article, aside, details, figcaption, figure, footer, header, menu, nav, section{display: block;}
+*{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+nav, ul{list-style: none; list-style-type: none; outline: none;}
+blockquote, q{quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after{content: ''; content: none;}
+a{margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; color:#404040; text-decoration: none;}
+a:hover{ color:#f47857;}
+ins{background-color: #ff9; color: #000; text-decoration: none;}
+mark{background-color: #ff9; color: #333; padding: 0 4px; color: #666; font-size: 14px;}
+del{text-decoration: line-through;}
+abbr[title], dfn[title]{border-bottom: 1px dotted; cursor: help;}
+table{border-collapse: collapse; border-spacing: 0;}
+hr{display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0;}
+input, select,textarea{vertical-align: middle; outline: none;}
+body{font-family: Microsoft Yahei,"Helvetica Neue", Helvetica, Arial, sans-serif; color:#404040; font-size: 14px;}
+/* reset css end*/
+/*公共容器*/
+.contain{width: 1000px;margin: 0 auto;position: relative}
+.contain::after{content: '';display: table;clear: both;overflow: hidden}
+.clearfix{clear: both;}
+.clearfix::after{content: ''; display: table; clear: both;}
+/*通用*/
+.mt_20{ margin-top: 20px;}
+.mt_30{ margin-top:30px;}
+.mt_10{ margin-top: 10px;}
+.mb_20{ margin-bottom: 20px;}
+.mb_30{ margin-bottom: 30px;}
+.pt_40{ padding-top:40px;}
+.pb_50{ padding-bottom:50px;}
+.bodyBg2{ background:#fcfcfc;}
+.columns700_280,.columns640_340{overflow:hidden;}
+.columns700_280 > .col_right{ width:280px; float:right;}
+.columns700_280 > .col_left{ width:700px; float:left;}
+.columns640_340 > .col_right{ width:640px; float:right;}
+.columns640_340 > .col_left{ width:340px; float:left;}
+/*通用按钮*/
+.mBtn{display:block;cursor: pointer; width:100%; border:0; border-radius:3px; height: 45px; line-height: 45px; text-align:center; color:#fff; background: #f47857;}
+.mBtn:active{ background: #f68e73;}
+/*头部样式*/
+.header{background:#252729;width: 100%;overflow: hidden; color: #f7f7f7;position: relative;z-index: 10;height: 80px;min-width: 1000px;top: 0}
+.header.fixed{ position:fixed;}
+.header .head-left{float: left}
+.header .head-left a{color: #f7f7f7;font-size: 30px;line-height: 80px;text-decoration: none;}
+.header .head-right{float: right}
+.header .head-right .nav li{float: left;;line-height: 80px;}
+.header .head-right .nav li:hover{background: #000;}
+.header .head-right .nav li a{color: #f7f7f7;text-decoration: none;font-size: 16px;padding: 30px 20px;}
+.header .head-right .nav li .on{color:#f47857}
+.header .head-right .nav li i{width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-top:5px solid #fff; font-size:0; line-height:0; margin: 40px 20px 0 -14px;; display: block; float: right;}
+.header .head-right .nav li .up{border-top:5px solid #f47857;}
+.header .head-right .nav .login a{font-size: 14px;border: 1px solid #f7f7f7;padding: 5px 30px;}
+.header .head-right .nav .login:hover{background:#252729 }
+.header .head-right .nav .login:hover a{color:#818284;background:#f7f7f7;}
+.header .head-right .nav li.login{padding: 0 20px}
+.header .head-right .nav .register a{font-size: 14px;border: 1px solid  #f47857;padding: 5px 30px;color: #f47857}
+.header .head-right .nav .register:hover a{color:#f7f7f7;background:#f47857 }
+.header .head-right .nav .register:hover{background:#252729 }
+.head .city-drop{background:#252729;width: 100%;overflow: hidden;color: #f7f7f7;position: fixed;left: 0;top: 80px;padding: 10px 0 20px;z-index: 11 ;display: none;}
+.head .city-drop .city-down{float: left;width: 100%;}
+.head .city-drop .city-down p{font-size: 16px;color:#f47857;line-height: 30px; }
+.head .city-drop .city-down ul li{line-height: 30px;float: left;padding: 0 10px;  width: 8.5%; text-align: center;}
+.head .city-drop .city-down ul li a{ color:#fff;}
+.head .city-drop .city-down ul li:hover{}
+
+/*底部样式*/
+.footer{background:#252729;width: 100%;overflow: hidden;padding: 60px 0;color:#fff;font-size: 14px;min-width: 1000px;}
+.footer .foot-logo{float: left;padding: 60px 0;}
+.footer .foot-logo a{font-size: 30px;color: #f7f7f7;}
+.footer .foot-left{width: 590px;float: left;margin-left: 80px;}
+.footer .foot-left ul{overflow: hidden ;border-bottom: 1px solid #3c3f42;padding-bottom: 20px;}
+.footer .foot-left ul li{float: left;margin-right: 40px;}
+.footer .foot-left ul li a{color:#fff;text-decoration: none;font-size: 16px;}
+.footer .foot-left ul li a:hover{color:#f47857}
+.footer .foot-left .foot-city{margin: 15px 0 5px;}
+.footer .foot-left .foot-city td{width: 100px;line-height: 28px;padding-bottom: 10px}
+.footer .foot-left .foot-city td a{color: #fff;}
+.footer .foot-left .foot-city td a:hover{color:#f47857}
+.footer .foot-left p{border-top: 1px solid #121314;padding-top: 20px;}
+.footer .foot-left .hr{border-top: 1px solid #121314;width: 100%;margin: 0;padding: 0}
+.footer .foot-left .hr01{border-top: 1px solid #3c3f42;}
+.footer .foot-right{width: auto;float: right;padding: 60px 0;}
+.footer .foot-right a{padding-left: 10px;}
+.footer.city{ padding:40px 15px;}
+.footer.city .foot-right{ margin-right:15px;}
+
+/*登陆/注册模块*/
+.masklayer{ display:none; position:fixed; z-index:99; left:0; top:0; width:100%; height:100%; background:#000; opacity:0.65;filter:alpha(opacity=65)}
+dl#loginBox{ display:none; width:600px; height:340px; position:fixed; z-index: 100; border-radius:3px; background:#fff; left:50%; top:50%; margin:-170px 0 0 -300px;}
+dl#loginBox > .close{cursor:pointer; position:absolute;top:15px;right:10px;z-index:2;width:20px;height:20px; background:url('../img/close.png') no-repeat center center;}
+dl#loginBox > dt{ font-size: 20px; text-align:center; line-height: 100px;position: relative;overflow: hidden;}
+dl#loginBox > dd{ overflow:hidden;}
+.mForm{}
+.mForm > .items{ margin-bottom: 15px;}
+.mForm > .items:after{clear:both; display:block; width:100%; height:0; content:"";}
+.mForm > .items:last-child{ margin-bottom:0;}
+.mForm > .items > .bd{ width:300px; float:left; margin-left:149px;}
+.mForm > .items > .bd .forgetBtn{ float: right;}
+.mForm > .items > .tips{ width:149px; float:left; padding:0 10px;}
+.mForm > .items > .tips > .con{ height: 45px; line-height: 43px; border:1px solid #fff; padding: 0 10px; display:none;}
+.mForm > .items > .tips.error > .con{ display:block; border-color:#ffbdbe; background:#ffebeb; color:#ff0000;}
+.mForm .submitBtn,.mForm .submitBtn.loading{ display:block; hegiht:45px; width:100%; line-height: 45px; text-align:center; color:#fff; background:#f47857;}
+.mForm .submitBtn:active{ background:#f68e73;}
+.mInput{ display:block; width:100%; height: 45px; line-height: 43px; border:1px solid #ddd; padding: 0 10px;}
+.mInputDrop {padding-left: 60px;position: relative;}
+.mInputDrop > .drop {position: absolute;left: 0;top: 0;cursor: pointer;width: 60px;height: 45px;line-height: 43px;text-align: center;border:1px solid #ddd; border-right:0;}
+.mInputDrop > .drop > .checked { height: 43px;background:#fff url('../img/arrow_down2.png') no-repeat 47px center;}
+.mInputDrop > .drop > ul {display: none;position: absolute;left: -1px;top: 43px;z-index: 1;width: 61px;background: #fff;border: 1px solid #ddd;}
+.mInputDrop > .drop li {border-bottom: 1px solid #ddd; height: 45px;}
+.mCode{ display:block; cursor:pointer; font-size:12px; color:#999; height: 45px; border:1px solid #ddd; background: #fafafa; line-height: 43px; text-align:center;}
+.mCode > em{font-style:normal; color:#f47857;}
+.mInputCode{overflow:hidden; position:relative;}
+.mInputCode > .mCode{ width: 115px; margin-left: 15px; position:absolute; right:0; top:0;}
+.mInputCode > p{ padding-right: 125px;}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <style type="text/css">
+    	.div1{
+    		width: 500px;
+    		height: 40px;
+    		border: 1px solid #000;
+    		line-height: 40px;
+    		font-size: 14px;
+    		margin: 0 auto;
+    		margin-top: 100px;
+    	}
+    	.main{
+    		   display: -webkit-flex;
+			  -webkit-flex-flow: row;
+			  -webkit-align-items: stretch;
+			  -webkit-justify-content:space-between;
+			  
+			  /*IE10还不支持*/
+			  display: -ms-flex;
+			  -ms-flex-flow: row wrap;
+			  -ms-align-items: stretch;
+			  -ms-justify-content:space-between;
+				
+			  display: flex;
+			  flex-flow: row;
+			  align-items: stretch;
+			  justify-content:space-between;
+			  border: 1px solid #f00;
+    	}
+    	.col{
+    		border: 1px solid #000;
+    	}
+    	.col2{
+    		-webkit-flex:1;
+    		-moz-flex:1;
+    		flex:1;
+    		}
+    </style>
+</head>
+<body>
+    
+    <div class="div1">
+    	
+    </div>
+    <div class="main">
+    	<div class="col col1" style=" width:60px;">jquery特效</div>
+	    <div class="col col2" style="">前端路上</div>
+	    <div class="col col3" style="width:30px;">懒人建站</div>
+    </div>
+    
+    
+</body>
+</html>

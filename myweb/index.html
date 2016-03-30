@@ -1,0 +1,101 @@
+<html>  
+    <head>  
+        <title>usually function</title>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+    </head>  
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>  
+    <body>  
+          
+        <table border="1px" id="targetTable">  
+            <tr border="1px">  
+                <td>序号</td>  
+                <td>姓名</td>  
+                <td>年龄</td>  
+                <td>生日</td>  
+                <td>备注</td>  
+            </tr>  
+            <tr  id="model" style="display:none" border="1px">  
+                <td></td>  
+                <td><input type="text" name="username"></td>  
+                <td><input type="text" name="age"></td>  
+                <td><input type="text" name="birthday"></td>  
+                <td><input type="text" name="note"><span onclick="del(this)">删除</span></td>  
+            </tr>  
+        </table>  
+          
+        <br>  
+        <br>  
+          
+        用户输入表单：  
+        姓名<input type="text" name="u_username"><br>  
+        年龄<input type="text" name="u_age"><br>  
+        生日<input type="text" name="u_birthday"><br>  
+        备注<input type="text" name="u_note"><br>  
+        <button onclick="add()" style="font-size:12px">添加</button>  
+          
+    </body>  
+<html>      
+  
+<script>  
+function del(obj){  
+    //alert($(obj).closest("tr").attr("outerHTML"));  
+    //$(obj).closest("tr").attr("outerHTML","")  
+    $(obj).closest("tr").remove();  
+    resetSequenceNum();  
+}  
+  
+function add(){  
+    //获取表单的值  
+    var u_username = $("input[name='u_username']").val();  
+    var u_age = $("input[name='u_age']").val();  
+    var u_birthday = $("input[name='u_birthday']").val();  
+    var u_note = $("input[name='u_note']").val();  
+    //alert(u_username);  
+    //判断表单的值是否为空  
+    if(u_username=="" || u_username==undefined){  
+        alert("用户姓名不能为空");  
+        $("input[name='u_username']").focus();  
+        return false;  
+    }  
+    //缓存要赋值的内容，避免多次查询，提高效率  
+    var trstr = $("#model").attr("outerHTML");  
+    //alert(trstr);  
+    //复制最后一行的代码添加到表的最后一行  
+    $("#targetTable tr").last().after(trstr);  
+    //$("#targetTable").find("tr").last().after(trstr);  
+    //让最后一行显示出来，而不是隐藏  
+    //$("#targetTable tr").last().css("display","block");会出现浏览器兼容的问题，在ff中显示不正常  
+    $("#targetTable tr").last().css("display","");  
+    //赋值  
+    var target = $("#targetTable tr").last().find("td");  
+    target.find("input[name='username']").val(u_username);  
+    target.find("input[name='age']").val(u_age);  
+    target.find("input[name='birthday']").val(u_birthday);  
+    target.find("input[name='note']").val(u_note);  
+      
+      
+    resetValue();  
+  
+    resetSequenceNum();  
+}  
+  
+//清空表单的值  
+function resetValue(){  
+    $("input[name='u_username']").val("");  
+    $("input[name='u_age']").val("");  
+    $("input[name='u_birthday']").val("");  
+    $("input[name='u_note']").val("");  
+}  
+  
+//重新设置序号  
+function resetSequenceNum(){  
+    var num=0;  
+    $("#targetTable tr").each(function(index,dom){  
+        if(index!=0){  
+            $(dom).find("td").first().html(num);  
+            num++;  
+        }  
+    });  
+}  
+  
+</script>  

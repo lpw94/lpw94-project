@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>首页导航</title>
+		<link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css"/>
+		<style type="text/css"> 
+		body{
+			height:2000px;
+			background-color:#ccc;
+		}
+		.masthead {
+			height: 70px;
+			border-bottom: 1px solid #ccc;
+			width: 100%;
+			background-color: brown;
+		}
+		.masthead.absolute {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.masthead.fixed {
+			position: fixed;
+			left: 0;
+			top: 0;
+		}
+		#header .masthead.fixed {
+			-webkit-transform: translateY(-100%);
+			-ms-transform: translateY(-100%);
+			transform: translateY(-100%);
+			-webkit-transition: -webkit-transform 200ms linear;
+			transition: transform 200ms linear
+		}
+		#header.headroom--not-top .masthead.fixed {
+			-webkit-transform: translateY(0%);
+			-ms-transform: translateY(0%);
+			transform: translateY(0%)
+		}
+		#waypoint {
+			height: 1000px;
+			padding-top: 800px
+		}
+		.items {
+			height: 250px;
+			background: lightblue;
+			text-align: center;
+			font-size: 30px;
+			line-height: 50px;
+		}
+		.items:nth-child(2n) {
+			background: pink;
+		}
+		.items section {
+			opacity: 0;
+			padding-top: 50px;
+			transition: all 1s;
+		}
+		.items.show section {
+			opacity: 1;
+			padding-top: 10px;
+		}
+		.odometer{
+			height: 50px;
+			width:100%;
+			text-align: center;
+			line-height: 50px;
+		}
+		.odometer span{
+			font-size: 48px;
+			color: #FFFFFF;
+			font-weight: bold;
+			
+		}
+		</style>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/jquery.waypoints.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://cdn.bootcss.com/odometer.js/0.4.7/odometer.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $('.items').waypoint({
+			  	handler:function(){
+			  		$(this.element).addClass('show')  // 注意 $(this.element)
+			  	},
+			  	offset: "80%"});
+			  	
+			  	
+			  	
+			  	
+				setTimeout(function() {
+					$('.odometer').html(1234);
+				}, 200);
+				
+				
+				var _startNum = 1234;
+				var _odometer = window.setInterval(function() {
+				_startNum++;
+				if (_startNum > 1250) {
+					_startNum = 1000;
+				}
+				
+				$('.odometer').html(_startNum);
+				}, 2500);
+				
+				
+				
+				});
+		</script>
+	</head>
+ 
+	<body>
+		<div id="header">
+			<div class='masthead absolute'>I'm absolute</div>
+			<div class='masthead fixed'>I'm fixed</div>
+		</div>
+		
+		<div id="waypoint">
+		<div class='items'><section>111</section></div>
+		<div class='items'><section>222</section></div>
+		<div class='items'><section>333</section></div>
+		<div class='items'><section>444</section></div>
+        </div>
+        
+        
+        
+        
+        <div class="odometer">9999</div>
+        
+        
+	</body>
+
+</html>

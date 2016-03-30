@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>面向对象</title>
+		<script type="text/javascript">
+		function createpreson(name, qq) {
+						this.name = name;
+						this.qq = qq;
+					}
+					
+					createpreson.prototype.showname = function() {
+						alert("我的名字：" + this.name)
+					}
+					createpreson.prototype.showqq = function() {
+						alert("我都QQ号：" + this.qq)
+					}
+					
+					
+					var obj = new createpreson("woge", "5451145154");
+//					obj.showname();
+//					obj.showqq();
+					
+					var obj2 = new createpreson("osadjfl", "002157484100");
+					alert(obj.showname == obj.showname)
+//					obj2.showname();
+//					obj2.showqq();
+
+
+					
+					
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

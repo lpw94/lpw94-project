@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>瀑布流</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+			    padding: 0;
+			}
+			body{
+				background-color: #E3E3E3;
+			}
+			#main{
+        		position: relative;
+        		margin: 0 auto;
+        		width: auto;
+        		height: auto;
+    		}
+			.box{
+				float: left;
+				padding: 15px 0 0 15px;
+			}
+			.pic{
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-shadow: 0 0 5px #CCCCCC;
+				background-color: #FFFFFF;
+			}
+			.pic img{
+				width: 250px;
+				height: auto;
+				border: none;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				//获取瀑布流层
+				waterfull("main","box");
+			}
+			
+			
+			function waterfull(parents,son){
+				//获取主要层
+				var oMain = document.getElementById(parents);
+				//alert(main);
+				//获取盒子类名
+				var oBoxs = ingetClass(main,son);
+				console.log(oBoxs) 
+				//获取盒子的宽
+				var boxW = oBoxs[0].offsetWidth;
+				//获取列就是当前可视窗口可以存放的列数
+				var row = Math.floor(document.documentElement.clientWidth/boxW);
+				//alert(row)
+				//设置主要层宽
+				oMain.style.width = boxW*row + "px";
+				minHarr = [];
+				for (var i=0;i<oBoxs.length;i++) {
+					if(i<row){
+						minHarr.push(oBoxs[i].offsetHeight)
+					}else{
+						//获取最小高的值
+						var minH = Math.min.apply(null,minHarr);
+						//获取最小高值的索引
+						var minHindex = getminHindex(minHarr,minH);
+						
+						oBoxs[i].style.position = "absolute";
+						oBoxs[i].style.left = oBoxs[minHindex].offsetLeft + "px";
+						oBoxs[i].style.top = minH + "px";												
+						minHarr[minHindex] += oBoxs[i].offsetHeight;
+					}
+				}
+				//alert(minHindex)
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			function getminHindex(arr,val){
+				for (var i in arr) {
+					if(arr[i]==val){
+						return i
+					}
+				}
+				
+			}
+			
+			
+			//封装获取class 类
+			function ingetClass(main,my){
+				var son = main.getElementsByTagName("*");
+				var myarr = [];
+				for (var i = 0;i<son.length;i++) {
+				   	if(son[i].className == my){
+				   		myarr.push(son[i])
+				   	}
+				}
+				return myarr;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="box">
+				<div class="pic">
+					<img src="img/1.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/11.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/th6.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/14.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/13.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/10.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/11.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/12.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/13.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/14.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/1.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/11.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/2.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/3.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/4.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/10.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/11.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/12.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/13.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/14.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/1.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/11.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/2.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/3.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/4.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/10.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/11.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/12.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/13.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="img/14.jpg"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

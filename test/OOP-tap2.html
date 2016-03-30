@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>切换</title>
+		<style type="text/css">
+			body{
+	            background-color: #CCCCCC;
+	            text-align: center;
+	        }
+	        .active{background-color: #FFAA00;}
+	        .main{width: 200px; height:200px;overflow: hidden; text-align: center;}
+	        .main div{background-color: #AAD83E; width: 200px; height:200px;display: none;}
+		</style>
+		<script type="text/javascript">
+//		     var obtn = null;
+//		     var odiv = null;
+			window.onload = function(){
+				new TabSwitch("main");
+				new TabSwitch("main2");
+			}
+			function TabSwitch(id){
+	           var omain = document.getElementById(id);
+	           
+	           
+	           this.obtn = omain.getElementsByTagName("button");
+	           //var obox = document.getElementById("box"); 
+	           this.odiv = omain.getElementsByTagName("div"); 		                      
+	              var _this = this;
+	              for(var i=0; i<this.obtn.length;i++ ){
+	                   this.obtn[i].index=i;
+	                   this.obtn[i].onclick = function(){
+	                   	_this.TabRun(this);
+	                   };
+	               };
+	         };
+	         
+			TabSwitch.prototype.TabRun = function(obtn){
+               for(var i=0; i<this.obtn.length;i++){
+                   this.odiv[i].style.display = "none";
+                   this.obtn[i].className = "";
+               }
+               this.odiv[obtn.index].style.display = "block";
+               obtn.className = "active";
+       		};
+		</script>
+	</head>
+
+	<body>		
+		<div id="main" class="main">
+			<button type="button">1</button>
+			<button type="button">2</button>
+			<button type="button">3</button>
+			<div id="box1" style="display: block;">
+				11111111
+			</div>
+			<div id="box2">
+				2222222222
+			</div>
+			<div id="box3">
+				33333333333
+			</div>			
+		</div>
+		
+		
+		
+		<div id="main2"  class="main">
+			<button type="button">1</button>
+			<button type="button">2</button>
+			<button type="button">3</button>
+			<div id="box1" style="display: block;">
+				11111111
+			</div>
+			<div id="box2">
+				2222222222
+			</div>
+			<div id="box3">
+				33333333333
+			</div>			
+		</div>
+	</body>
+
+</html>

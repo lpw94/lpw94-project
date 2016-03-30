@@ -1,0 +1,16 @@
+﻿.main{
+	margin: 0 auto;
+	width:1000px;
+	text-align: center;
+}
+.fix-div{position: fixed;left: 0;bottom: 0;background-color: red;height: 30px;line-height: 30px;width: 100%;}
+.fix-div a{color: blue;}
+ul li{
+	width: 1000px;
+	height: 30px;
+	background-color: #74BA11;
+	margin: 10px 0px;
+	line-height: 30px;
+	
+}
+ul li:

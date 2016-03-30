@@ -1,0 +1,430 @@
+body{
+	background-color: #E2E2E2;
+}
+body a {
+  text-decoration: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+#events{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.left_box {	
+  margin-right: 15px;
+  min-height: 705px;
+  width: 656px;
+  display: inline-block;
+  float: left;
+  background-color: #fff;
+  border-bottom: 3px solid #c4c3c3;
+  margin-bottom: 50px;
+}
+#events .attending_block {
+  width: 272px;
+  display: inline-block;
+  float: left;
+  margin-right: 0;
+  background-color: #fff;
+}
+#events .attending_block .image {
+  background: url();
+  min-height: 235px;
+}
+#events .attending_block .image img {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#events .attending_block .rsvp_block {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+#events .attending_block .rsvp_block .rsvp {
+  color: #818284;
+  text-align: center;
+  font-size: 14px;
+}
+#events .attending_block .rsvp_block .bar {
+  display: block;
+  width: 215px;
+  margin: 15px auto auto;
+  border-bottom: 2px solid #e2e2e2;
+}
+#events .attending_block .attendees_block {
+  padding: 0 15px 15px;
+}
+.styleBadass {
+  font-family: "Proxima N W01 Bold",sans-serif;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#events .attending_block .attendees_block h4 span {
+  color: #818284;
+}
+#events .details_block {
+  width: 368px;
+  padding-top: 0 15px;
+  background-color: #fff;
+  min-height: 706px;
+  display: inline-block;
+  float: left;
+}
+.left_box .leftBorder {
+  border-left: 2px solid #e2e2e2;
+}
+#events .details_block .padder {
+  padding: 0 0 30px 30px;
+}
+#events .details_block .padder .date {
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+#events .details_block .padder .date .month {
+  display: inline-block;
+  border: 2px solid #252729;
+  padding: 5px 12px;
+  margin-right: -7px;
+}
+.styleBadass {
+  font-family: "Proxima N W01 Bold",sans-serif;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#events .details_block .padder .date .day {
+  display: inline-block;
+  border: 2px solid #252729;
+  padding: 5px 12px;
+}
+.SG-bigTitle {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 110%;
+  margin-top: 20px;
+}
+.SG-bigTitle, .knockout {
+  font-family: "Knockout 48 A","Knockout 48 B","Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
+}
+.SG-titleDivider {
+  margin: 15px 0;
+  background-color: #252729;
+  height: 3px;
+  width: 32px;
+}
+#events .details_block .padder .time_block {
+  margin-bottom: 15px;
+}
+#events .details_block .padder .time_block .time_image {
+  position: absolute;
+  background-image: url(../img/images_bg.png);
+  background-position: 0 -7837px;
+  background-repeat: no-repeat;
+  -moz-background-size: 560px auto;
+  -o-background-size: 560px auto;
+  -webkit-background-size: 560px auto;
+  background-size: 560px auto;
+  width: 20px;
+  height: 19px;
+}
+#events .details_block .padder .time_block span {
+  margin-left: 30px;
+}
+#events .details_block .padder .location_block span {
+  margin-left: 30px;
+}
+.styleLargeBC {
+  font-family: "Proxima N W01 Reg",sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+}
+#events .details_block .padder .location_block .location_image {
+  position: absolute;
+  background-image: url(../img/images_bg.png);
+  background-position: 0 -2058px;
+  background-repeat: no-repeat;
+  -moz-background-size: 560px auto;
+  -o-background-size: 560px auto;
+  -webkit-background-size: 560px auto;
+  background-size: 560px auto;
+  width: 15px;
+  height: 17px;
+}
+#events .details_block .padder .location_block .location_description {
+  padding-left: 45px;
+  color: #818284;
+}
+.styleSmallBC {
+  font-family: "Proxima N W01 Reg",sans-serif;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 1px;
+}
+#events .details_block .padder .about {
+  margin: 30px 0 15px;
+}
+#events .details_block .padder .description {
+  color: #252729;
+  line-height: 20px;
+  padding-right: 30px;
+}
+.styleLargeBC {
+  font-family: "Proxima N W01 Reg",sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+}
+#events .details_block .padder .chatter {
+  margin-top: 45px;
+}
+#events .attending_block .attendees_block .avatar {
+  display: inline-block;
+  margin: 15px 8px 0 0;
+  width: 44px;
+  height: 44px;
+}
+.avatar.extraSmall {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border: none;
+}
+#updates-container .update-tab div span.notification-menu, .styleBadass {
+  font-family: "Proxima N W01 Bold",sans-serif;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#events .details_block .padder .post_comments .comment_form {
+  border-bottom: 1px solid #e2e2e2;
+  overflow: hidden;
+  padding: 3px 0;
+  margin: 30px 0 0;
+}
+#events .details_block .padder .post_comments .comment_form .avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  margin: -7px 8px 3px -3px;
+  float: left;
+  overflow: hidden;
+}
+.avatar {
+  width: 82px;
+  height: 82px;
+  border-radius: 82px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  background: #fff;
+  background-size: cover;
+}
+.avatar img {
+  display: block;
+  transform: none!important;
+  webkit-transform: none!important;
+  -webkit-transform: none!important;
+  width: 100%;
+  height: 100%;
+}
+#events .details_block .padder .post_comments .comment_form form {
+  display: inline-block;
+}
+#events .details_block .padder .post_comments .comment_form form .input {
+  padding: 7px 0 6px;
+  border: none;
+  font-size: 16px;
+  text-indent: 1px;
+  color: #252729;
+  font-family: "Proxima N W01 Light",sans-serif;
+  line-height: 16px;
+  width: 275px;
+  min-height: 16px;
+  max-height: 125px;
+  overflow: auto;
+  letter-spacing: 1px;
+  cursor: text;
+}
+#events .details_block .padder .post_comments .comment_form a.upload_image {
+  float: right;
+  border: none;
+  padding: 4px;
+  background-color: transparent;
+  margin-right: 4px;
+}
+#events .details_block .padder .post_comments .comment_form .add_photo {
+  background-image: url(../img/images_bg.png);
+  background-position: 0 -190.5px;
+  background-repeat: no-repeat;
+  -moz-background-size: 560px auto;
+  -o-background-size: 560px auto;
+  -webkit-background-size: 560px auto;
+  background-size: 560px auto;
+  width: 26px;
+  height: 19px;
+}
+#events .int_block {
+  width: 320px;
+}
+.col.last {
+  margin-right: 0;
+}
+.col {
+  float: left;
+  margin-right: 15px;
+  min-height: 15px;
+}
+#events .int_block .map_block {
+  background-color: #fff;
+  min-height: 225px;
+  margin-bottom: 15px;
+}
+#events .int_block .map_block .location_block {
+  width: 320p;
+  background-color: #fff;
+  min-height: 65px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #c4c3c3;
+}
+#events .int_block .map_block .location_block .location_image {
+  position: absolute;
+  margin-left: 9px;
+  background-image: url(../img/images_bg.png);
+  background-position: 0 -2058px;
+  background-repeat: no-repeat;
+  -moz-background-size: 560px auto;
+  -o-background-size: 560px auto;
+  -webkit-background-size: 560px auto;
+  background-size: 560px auto;
+  width: 15px;
+  height: 17px;
+}
+#events .int_block .map_block .location_block span {
+  margin-left: 32px;
+  color: #252729;
+  width: 288px;
+  display: inline-block;
+}
+#events .int_block .map_block .location_block .address {
+  margin: 4px 0 0 32px;
+  color: #818284;
+}
+#events .int_block .share_block {
+  padding: 15px;
+  margin-bottom: 18px;
+  background-color: #fff;
+  border-bottom: 3px solid #c4c3c3;
+}
+#updates-container 	.update-tab div span.notification-menu, .styleBadass {
+  font-family: "Proxima N W01 Bold",sans-serif;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#events .int_block .share_block .share_box {
+  margin: 15px 0 0;
+}
+#events .int_block .share_block .share_box input {
+  width: 100%;
+  border: none;
+  padding-bottom: 4px;
+  display: block;
+  border-bottom: 2px solid #c4c3c3;
+  color: #c4c3c3;
+}
+.styleSearch {
+  font-family: "Proxima N W01 Light",sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 1px;
+}
+#events .int_block .share_block .social_block {
+  margin: 15px 0;
+}
+.web_box {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.socialIcon span, a.socialIcon span {
+  display: inline-block;
+  margin: 12px;
+}
+.web_box {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  margin-right: 15px;
+  overflow: hidden;
+  color: #e2e2e2;
+}
+.web_box a.webIcon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.socialIcon span.facebook, a.socialIcon span.facebook {
+  background-image: url(../img/images_bg.png);
+  background-position: 0 -7501px;
+  background-repeat: no-repeat;
+  -moz-background-size: 560px auto;
+  -o-background-size: 560px auto;
+  -webkit-background-size: 560px auto;
+  background-size: 560px auto;
+  width: 16px;
+  height: 16px;
+  opacity: .5;
+}
+.socialIcon span.googleplus, a.socialIcon span.googleplus {
+  background-image: url(../img/images_bg.png);
+  background-position: 0 -7586.5px;
+  background-repeat: no-repeat;
+  -moz-background-size: 560px auto;
+  -o-background-size: 560px auto;
+  -webkit-background-size: 560px auto;
+  background-size: 560px auto;
+  width: 16px;
+  height: 16px;
+  opacity: .5;
+}
+.socialIcon span.linkedin, a.socialIcon span.linkedin {
+  background-image: url(../img/images_bg.png);
+  background-position: 0 -7643.5px;
+  background-repeat: no-repeat;
+  -moz-background-size: 560px auto;
+  -o-background-size: 560px auto;
+  -webkit-background-size: 560px auto;
+  background-size: 560px auto;
+  width: 16px;
+  height: 16px;
+  opacity: .5;
+}
+.socialIcon span.twitter, a.socialIcon span.twitter {
+  background-image: url(../img/images_bg.png);
+  background-position: 0 -7672px;
+  background-repeat: no-repeat;
+  -moz-background-size: 560px auto;
+  -o-background-size: 560px auto;
+  -webkit-background-size: 560px auto;
+  background-size: 560px auto;
+  width: 16px;
+  height: 16px;
+  opacity: .5;
+}
+
+
+/*end*/

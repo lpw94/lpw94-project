@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS实现文字垂直居中-柯乐义</title>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			.content {
+				border: 1px solid red;
+				width: 500px;
+				margin: 0 auto;
+				font-size: 12px;
+				line-height: 1.8;
+			}
+			/*标准游览器版本*/
+			
+			html,
+			body {
+				height: 100%;
+			}
+			.wrapper {
+				text-align: center;
+				width: 100%;
+				height: 100%;
+				display: table;
+			}
+			.subwrap {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			/*IE6*/
+			
+			*html .wrapper {
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				text-align: center;
+				display: block;
+				height: auto
+			}
+			*html .subwrap {
+				position: relative;
+				top: -50%;
+				text-align: center;
+			}
+			/*IE7 可以合并 但是为了更好说明 没有合并*/
+			
+			*+html .wrapper {
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				text-align: center;
+				display: block;
+				height: auto
+			}
+			*+html .subwrap {
+				position: relative;
+				top: -50%;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+		<div class="wrapper">
+			<div class="subwrap">
+				<div class="content">
+					关于 CSS 的未知高度水平垂直居中问题 keleyi.com <a href="http://keleyi.com/a/bjac/gbb2ftv3.htm">原文</a>
+					<br />
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>滚动轮播学习控件</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<style type="text/css">
+	body{
+		background-color: #CCCCCC;
+	}
+		#scroll{
+			position: relative;
+			width: 960px;
+			height: 500px;
+			margin: 50px auto;
+		}
+		.show{
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			float: left;
+		}
+		.img_box{
+			width: 6650px;
+			position: absolute;
+			top:0;
+			left: 0;
+		}
+		.img_box ul{
+			float: left;
+			text-align: center;
+			line-height: 50px;
+		}
+		.img_box ul li{
+            width: 960px;
+            height: 500px;
+            background: #f8f8f8;
+            float: left;
+            overflow: hidden;
+        }
+        .img_box ul li img{
+        	width: 100%;
+        	height: 100%;
+        }
+        .current_box{
+            position: absolute;
+            left: 40px;
+            bottom: -80px;
+        }
+        .current_box li{
+        	width: 140px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+            background: #ff0;
+        }
+        .current_box .current{
+        	background-color: red;
+        }
+        .prev,.next{
+        	cursor:pointer;
+        	position: absolute;
+        	width: 30px;
+        	height: 20px;
+        	background-color: #8A2BE2;
+        }
+        .prev{
+        	top: 45%;
+        	left: -40px;
+        }
+        .next{
+        	top: 45%;
+        	right: -40px;
+        }
+	</style>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var Imgbox = $(".img_box");
+			//取得当前li标签的宽  变成负值
+		    var Li_W = ($(".img_box li").width()) * -1;
+			//alert(Li_W)   //-960				
+			$(".next").click(function(){
+				nextscroll();
+			});
+			//下一页执行函数
+			function nextscroll(){		
+				Imgbox.stop().animate({left:Li_W},"slow",function(){
+					//li标签的第一个
+					var firstItem = $(".img_box ul li").first();
+					Imgbox.find("ul").append(firstItem);					
+					$(this).css("left","0px");
+					//alert(this)
+					circle()
+				});				
+			}
+			$("#btn").click(function(){
+				test();
+			});
+			function test(){
+					//li标签的第一个
+					var firstItem = $(".img_box ul li").first();
+					Imgbox.find("ul").append(firstItem);					
+					//firstItem.css("left","0px") == $(this).css("left","0px");
+					//alert(this==firstItem)  //false
+							}
+			//监听当前第几个
+			function circle(){
+				var curItem = $(".img_box ul li").first();
+				//给当前标签添加index属性
+				var curIndex = curItem.attr("index");
+				$(".current_box li").removeClass("current");			
+				$(".current_box li").eq(curIndex).addClass("current");			
+			}
+			//上一页执行函数
+			$(".prev").click(function(){
+				var lastItem = $(".img_box ul li").last();
+				Imgbox.find("ul").prepend(lastItem);
+				Imgbox.css("left",Li_W);
+				Imgbox.stop().animate({"left":"0px"},"slow",function(){
+					circle();
+				})				
+			})
+			// 子导航		
+			var end = 1;
+			$(".current_box li").click(function(){
+				if(end == 0){
+					return;
+				}
+				$(this).addClass("current").siblings().removeClass("current");
+				var nextindex = $(this).index();
+				var curIndex = $(".img_box li").first().attr("index");
+				var curr = $(".img_box li").first().clone();
+				//alert("000")
+				if(nextindex==curIndex){
+					return;
+				}
+				if(nextindex>curIndex){
+					for (var i=0;i<nextindex-curIndex;i++) {
+						var firstItem = $(".img_box li").first();
+					    $(".img_box ul").append(firstItem);
+					}
+				
+				$(".img_box ul").prepend(curr);
+				if (end == 1) {
+					end = 0;
+					Imgbox.stop().animate({left:Li_W},"slow",function(){
+						$(".img_box ul li").first().remove();
+						Imgbox.css("left","0px")
+						end = 1;
+					})
+				}
+				} else{
+					var curt = $(".img_box li").last().clone();
+					for (var i=0;i<curIndex-nextindex;i++) {
+						var lastItem = $(".img_box li").last();
+						$(".img_box ul").prepend(lastItem);
+					}
+					$(".img_box ul").append(curt);
+					Imgbox.css("left",Li_W);
+					
+				if (end == 1) {
+					end = 0;
+					Imgbox.stop().animate({left:"0px"},"slow",function(){
+						$(".img_box ul li").last().remove();
+						end = 1;
+					})
+				}		
+				}
+			})
+		
+		})
+	</script>
+</head>
+<body>
+	<div id="scroll">
+		<div class="prev"></div>
+		<div class="next"></div>
+		<div class="show">
+			<div class="img_box">
+			<ul>
+				<li index="0" style="background-color: #0000FF;"><img src="img/1.jpg"/></li>
+				<li index="1" style="background-color: #66DD66;"><img src="img/2.jpg"/></li>
+				<li index="2" style="background-color: #8A2BE2;"><img src="img/3.jpg"/></li>
+				<li index="3" style="background-color: #111111"><img src="img/4.jpg"/></li>
+				<li index="4" style="background-color: #CB5412;"><img src="img/15.jpg"/></li>
+				<li index="5" style="background-color: #FF0000;"><img src="img/14.jpg"/></li>
+			</ul>
+			</div>
+	    </div>
+	    
+			<ul class="current_box">
+				<li class="current">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+		
+		
+	</div>
+	<input type="button" name="btn" id="btn" value="点击测试" />
+</body>
+</html>

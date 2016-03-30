@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>面向对象</title>
+		<script type="text/javascript">
+//			var arr = [1,2,3,4,5,6,7]
+//			arr.a=12;
+//			alert(arr.a);
+			
+//			function aaa(){
+//				alert("aaaa")
+//			}
+
+
+			
+			//aaa()
+			var obj = new Object();
+			
+			obj.name = "woge";
+			obj.qq = "504509959";
+			
+			obj.showname = function(){
+				alert("我的名字：" + this.name)
+			}
+			obj.showqq = function(){
+				alert("我都QQ号：" + this.qq)
+			}
+			
+			obj.showname();
+			obj.showqq();
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
