@@ -11,17 +11,26 @@
 				background-color: yellow;
 				position: absolute;
 			}
+			#div2 {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				position: absolute;
+			}
 		</style>
 		<script src="js/Drag.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			window.onload = function() {
 				new Drag("div1");
+				new Drag("div2");
 			}
+			
 		</script>
 	</head>
 
 	<body>
 		<div id="div1"></div>
+		<div id="div2"></div>
 	</body>
 
 </html>
