@@ -6,6 +6,7 @@ function Drag(id){
 	
 	this.oDiv.onmousedown = function(ev){
 		_this.Dragdown(ev);
+		return false;
 	} 
 	
 }
