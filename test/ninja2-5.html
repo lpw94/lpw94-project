@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test - suite</title>
+	<script>
+		function assert(value,desc) {
+			// body...
+			var li = document.createElement("li");
+			li.className = value ? "pass" : "fail";
+			li.appendChild(document.createTextNode(desc));
+			document.getElementById("results").appendChild(li);
+			
+		}
+		
+		window.onload = function(){
+		    assert(true,"daskfjldkffasfd");
+		    assert(false,"fail");
+		}
+		
+	</script>
+	<style type="text/css">
+		#results li.pass{
+			color: green;
+		}
+		#results li.fail{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<ul id="results">
+		
+	</ul>
+</body>
+</html>

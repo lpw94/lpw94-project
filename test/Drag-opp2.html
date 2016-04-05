@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>拖拽-面向对象学习</title>
+		<style type="text/css">
+			#div1{width: 200px;height: 200px;background-color: yellow;position: absolute;}
+		</style>
+		<script type="text/javascript">
+		var oDiv = null;
+		var disX = 0;
+		var disY = 0;
+		
+window.onload = function(){
+	oDiv = document.getElementById("div1");
+	
+	oDiv.onmousedown = Dragdown;
+	
+}
+function Dragdown(ev){
+		var oEvent = ev||event;
+		
+		disX = oEvent.clientX - oDiv.offsetLeft;
+		disY = oEvent.clientY - oDiv.offsetTop;
+		
+		document.onmousemove = Dragmove;
+		
+		document.onmouseup = Dragup;
+	}
+function Dragmove(ev){
+			var oEvent = ev||event;
+			
+			oDiv.style.left = oEvent.clientX - disX + "px";
+			oDiv.style.top = oEvent.clientY -disY + "px";
+			
+		}
+function Dragup(){
+			document.onmousemove = null;
+			document.onmouseup = null;
+			
+		}
+		</script>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>		
+</html>
