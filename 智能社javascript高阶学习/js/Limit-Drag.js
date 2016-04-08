@@ -8,6 +8,9 @@ for(var i in Drag.prototype){
 LimitDrag.prototype.Dragmove = function(ev){
 	var oEvent = event || ev;
 	var _this = this;
+	
+	
+	
 	var L = oEvent.clientX - this.disX;
 	var T = oEvent.clientY - this.disY;
 	

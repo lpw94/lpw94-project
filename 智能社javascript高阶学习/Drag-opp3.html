@@ -21,7 +21,7 @@ function Drag(id){
 	var _this = this;
 	this.oDiv = document.getElementById(id);
 	
-	this.oDiv.onmousedown = function(ev){
+	this.oDiv.onmousedown = function(){
 		_this.Dragdown(ev);
 	} 
 	
@@ -32,7 +32,7 @@ Drag.prototype.Dragdown = function (ev){
 		this.disX = oEvent.clientX - this.oDiv.offsetLeft;
 		this.disY = oEvent.clientY - this.oDiv.offsetTop;
 		
-		document.onmousemove = function(ev){
+		document.onmousemove = function(){
 			_this.Dragmove(ev);
 		} 
 		

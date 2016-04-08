@@ -14,7 +14,7 @@
 window.onload = function(){
 	oDiv = document.getElementById("div1");
 	
-	oDiv.onmousedown = Dragdown;
+	oDiv.onmousedown = Dragdown();
 	
 }
 function Dragdown(ev){
@@ -23,9 +23,9 @@ function Dragdown(ev){
 		disX = oEvent.clientX - oDiv.offsetLeft;
 		disY = oEvent.clientY - oDiv.offsetTop;
 		
-		document.onmousemove = Dragmove;
+		document.onmousemove = Dragmove();
 		
-		document.onmouseup = Dragup;
+		document.onmouseup = Dragup();
 	}
 function Dragmove(ev){
 			var oEvent = ev||event;
