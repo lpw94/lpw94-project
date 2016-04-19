@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <title>内存测试</title>
+    <style type="text/css">
+        div{
+            height: 20px;
+            widows: 20px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        你好世界0
+    </div>
+    <div id="div2">
+        你好世界2
+    </div>
+    <div id="div3">
+        你好世界你好世界3
+    </div>
+    <div id="div4">
+        你好世界4
+    </div>
+    <div id="div5">
+        你好世界5
+    </div>
+    <div id="div6">
+        你好世界6
+    </div>
+    <div id="div7">
+        你好世界7
+    </div>
+    <button id="btn">点我</button>
+    <script type="text/javascript">
+        var k = 0;
+        function x() {
+            if(k >= 7) return;
+            document.getElementById('div'+(++k)).innerHTML = '你好世界'
+        }
+        document.getElementById('btn').addEventListener('click', x);
+     
+    </script>
+</body>
+</html>
