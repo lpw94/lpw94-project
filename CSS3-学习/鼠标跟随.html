@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta charset="utf-8">
+		<title>左边跟随鼠标滑动导航</title>
+		<meta name="keywords" content="滑动导航" />
+		<meta name="description" content="左边跟随鼠标滑动导航" />
+		<link rel="stylesheet" type="text/css" href="css/line.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var verNav = $(".bl-vernav"), //第一层ul.
+					line = verNav.siblings(".sideLine"), //左边条纹线
+					verNavFirst = verNav.children("li:first"), //第一层ul中第一个li
+					curY = verNav.children("li.cur").position().top;
+					//设置辅助线初始化高度和宽度，也可以直接用css设置好，这里就不用js计算了
+					line.height(verNavFirst.outerHeight() - 1).width(verNavFirst.outerWidth()); 
+					
+					verNav.find("li").mouseenter(function() {
+						var thisY = $(this).position().top;
+						console.log(thisY);
+						line.stop(true, true).animate({
+							top: thisY
+						}, 200);
+						return false
+					}).end().mouseleave(function() {
+						line.stop(true, true).animate({
+							top: curY
+						}, 200)
+					}).trigger("mouseleave");
+			});
+		</script>
+	</head>
+
+	<body style="padding:50px;">
+		<div class="demobox">
+			<h1 class="h3">左边条纹跟随鼠标滑动导航</h1>
+			<br/>
+			<div class="bl-vernav-wrap">
+				<div class="sideLine"></div>
+				<ul class="bl-vernav vernav-level">
+					<li><a href="#" class="one">导航菜单</a></li>
+					<li class="cur"> <a href="#" class="one">神探夏洛克</a>
+						<ul>
+							<li><a href="#">海贼王</a></li>
+							<li><a href="#">海贼王</a></li>
+							<li><a href="#">海贼王</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="one">神探夏洛克</a></li>
+					<li><a href="#" class="one">神探夏洛克</a></li>
+					<li><a href="#" class="one">神探夏洛克</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
