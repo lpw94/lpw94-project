@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+			<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+			<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	</head>
+	 <body>
+        <div><div class="main_header w1920">
+			<div class="clearfix header_top">
+				<a class="fl in_b ml50" href="/ishop/web/?app_act=index/do_index"><img alt="logo" class="block" height="80" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/logo.jpg" width="400" /></a>
+				<div class="fr">
+					<img alt="logo" class="in_b mt10" height="50" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/goods_logo1.png" width="158" /> <img alt="logo" class="in_b mt10" height="50" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/goods_logo2.png"
+					width="167" /> <img alt="logo" class="in_b mt10" height="50" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/goods_logo3.png" width="283" /> <img alt="logo" class="in_b top10 tel ml50" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/tel.png"
+					/>
+					<a class="in_b btn" onclick="location.href='http://lbs.lber.com.cn/ishop/web/?app_act=page/&amp;code=302'"><img class="block" height="90" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/fenxiao.gif" /></a>
+					<a class="in_b top10 btn" href="javascript:void(0);" id="search_btn"><img alt="search" class="block" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/search_btn.png" /></a>
+				</div>
+			</div>
+	<div class="top_line">
+		&nbsp;</div>
+</div></div>
+        <div class="clearfix widget-container" style="width:100%;height:500px;margin:0 auto;"><div><div class="error_warp">
+			<div class="img_show_tip">
+				<img src="http://121.41.176.228/image/web/upload/ishop_index/error_05.jpg"/>
+			</div>
+				<p style="text-align: center;padding-top: 10px;line-height: 48px;font-size: 36px;color: #fb4d94;">
+				 <em class="e"><img src="http://121.41.176.228/image/web/upload/ishop_index/e_font.jpg"/></em>店正在开发测试中...
+				</p>
+		</div>
+		<style type="text/css">
+		/*错误页面样式*/
+		.error_warp{
+			width: 100%;
+			height: auto;
+			padding-top: 150px;
+		}
+		.error_warp .img_show_tip{
+			text-align: center;
+		}
+		.e{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 3px;
+		}
+		</style></div></div>
+        
+        <!-- 购物车开始 -->
+        <div class="leftGreyDiv none"></div>
+<div class="cartListPage none">
+	<div class="tit">购物车</div>
+	<div class="cartListContainer" style="width:1760px; position:absolute; top:88px; height:auto; bottom:100px; overflow-y:scroll;">
+    	<div id="cart_info"></div>
+    </div>
+    <!--购物车底部-->
+    <div class="cartBottom">
+    	<p class="fl colorPink f20 ml50">温馨提醒：保税商品每单税款不能超过50元，超过将征收税款</p>
+        <a class="gotoPay fr none">去结算</a>
+    	<a class="continueBye fr">继续购物</a>
+    </div>
+</div>
+<script type='text/javascript' src='http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/js/cart.js'></script>
+
+        <!-- 购物车结束 -->
+        
+        <!-- 搜索框 -->
+        <div id="slideBtn2"  class="hide slideBtn"></div>
+        <div class="searchGreyDiv none"></div>
+        <div class="searchBox none">
+	<h2>热门搜索</h2>
+	<div class="searchWord">
+    	<ul>
+    	<div><li><a href="/ishop/web/?app_act=lists/search&q=荷兰牛栏">荷兰牛栏</a></li>
+		            <li><a href="/ishop/web/?app_act=lists/search&q=德国爱他美">德国爱他美</a></li>
+		            <li><a href="/ishop/web/?app_act=lists/search&q=荷兰美素">荷兰美素</a></li>
+		            <li><a href="/ishop/web/?app_act=lists/search&q=澳洲爱他美">澳洲爱他美</a></li>
+		            <li><a href="/ishop/web/?app_act=lists/search&q=新加坡惠氏">新加坡惠氏</a></li>
+			    <li><a href="/ishop/web/?app_act=lists/search&q=加拿大惠氏">加拿大惠氏</a></li>
+			    <li><a href="/ishop/web/?app_act=lists/search&q=加拿大雅培">加拿大雅培</a></li>
+			    <li><a href="/ishop/web/?app_act=lists/search&q=花王纸尿裤">花王纸尿裤</a></li>
+			    <li><a href="/ishop/web/?app_act=lists/search&q=喜宝米粉">喜宝米粉</a></li>
+			    <li><a href="/ishop/web/?app_act=lists/search&q=德国铁元">德国铁元</a></li>
+			    <li><a href="/ishop/web/?app_act=lists/search&q=挪威小鱼油">挪威小鱼油</a></li></div>
+        	
+        </ul>
+    </div>
+    <div class="searchInput">
+    	<a class="searchBtn fr"></a>
+    	<input type="text" class="txt fl" value="搜索乐贝尔商品" name="q" id="search_1" class="search txt" onfocus="if($(this).val() == '搜索乐贝尔商品' || $(this).val() == '请输入关键字...') value='';$(this).attr('style','color:#000');" onblur="if($(this).val() == '' ) value='请输入关键字...';$(this).attr('style','color:#d4d4d4');" value="搜索乐贝尔商品">
+    </div>
+</div>
+
+
+<script type="text/javascript">
+$(function(){
+	$('.searchBtn').bind('click',function(){
+		search_all(1,1);
+	});
+});
+function search_all(type,pos){
+	if($('#min_price').size()>0  ){
+	    var min = $('#min_price').val();
+	    var max = $('#max_price').val();
+	    if(min>0){
+			min_pri = min;
+	    }else{
+			min_pri = -1;
+	    }
+	    if(max>0){
+			max_pri = max;
+	    }else{
+			max_pri = -1;
+	    }
+		IShopGoodsList.min_price = min_pri;
+		IShopGoodsList.max_price = max_pri;
+	}
+	var keyword = "";
+	if( type == 1 ){
+		keyword = $("#search_"+pos).val();
+		if( keyword == "寻找商品" || keyword == "" || keyword=="请输入关键字..."){
+			window.location.href = "?app_act=lists/";
+		}
+		window.location.href = "?app_act=lists/search"+'&q=' + encodeURIComponent(keyword);
+	}else if(type == 3){
+		var lb = '';
+		$('input[name=label]:checked').each(function(){
+			if( lb ){
+				lb += ','+$(this).attr('lb');
+			}else{
+				lb = '&lb='+$(this).attr('lb');
+			}
+		});
+		if( pos==3 ){
+			keyword = $("#search_1").val();
+			window.location.href = "?app_act=lists/search"+'&q=' + encodeURIComponent(keyword)+lb;
+		}else{
+			window.location.href ="?app_act=lists/"+lb;
+		}
+	}else{
+		IShopGoodsList.reload_data(1);
+	}
+	
+}
+</script>
+        
+        <!--详情页弹出浮层-->
+		<div class="alert_goods"></div>
+		<div class="submitOrderOK none"></div>
+		<div class="greyDiv none"></div>
+		
+		<!-- 优惠券 -->
+		<div class="coupons none"></div>
+        <div class="greyDiv1 none"></div>
+        <!--底部开始-->
+<div class="fixed_box w1920">
+    <div class="fixed_btn pr clearfix">
+
+        <!-- 底部导航分类widget -->
+                <div><div class="fl">
+	<ul class="tab_box pr clearfix">
+		<li class="current">
+			<a onclick="location.href='javascript:;'"><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav1.png" /> <img class="none" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav11.png" /> <br />
+			首页 </a></li>
+		<li>
+			<a onclick="location.href='javascript:;'"><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav2.png" /> <img class="none" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav22.png" /> <br />
+			母婴 </a></li>
+		<li>
+			<a onclick="location.href='javascript:;'"><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav3.png" /> <img class="none" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav33.png" /> <br />
+			护肤品 </a></li>
+		<li>
+			<a onclick="location.href='javascript:;'"><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/rhyp1.png" /> <img class="none" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/rhyp11.png" /> <br />
+			日化用品 </a></li>
+		<li>
+			<a onclick="location.href='javascript:;'"><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav4.png" /> <img class="none" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav44.png" /> <br />
+			保健品 </a></li>
+		<li>
+			<a onclick="location.href='javascript:;'"><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav5.png" /> <img class="none" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav55.png" /> <br />
+			奢侈品 </a></li>
+		<li>
+			<a onclick="location.href='javascript:;'"><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav6.png" /> <img class="none" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/bottom_nav66.png" /> <br />
+			海外直邮 </a></li>
+			<i style="display:inline-block;width:20px;height:36px;background:url(" http:="" image="" web="" upload="" ishop_index="" no-repeat="" left=""></i>
+		<li>
+			<a onclick="location.href='javascript:;'">
+				<img class="" src="http://121.41.176.228/image/web/upload/ishop_index/bottom_nav88.png" />
+				<br />
+				<span class="none" style="display: inline-block;vertical-align: middle;margin-top: -14px;">社区<i style="display:inline-block;width:20px;height:26px;background:url(http://121.41.176.228/image/web/upload/ishop_index/bottom_nav_efont.png) no-repeat center 6px"></i>店</span>
+			</a>
+		</li>
+		<li>
+			<a onclick="location.href='http://lbs.lber.com.cn/ishop/web/?app_act=page/&amp;code=303&amp;tab=7'"><img class="none" src="http://121.41.176.228/image/web/upload/ishop_index/bottom_nav88.png" style="position:relative;top:0px;" /><img src="http://121.41.176.228/image/web/upload/ishop_index/bottom_nav_market.gif" style="position:relative;top:-10px;"
+				/> <br />
+				<span class="none" style="display: inline-block;vertical-align: middle;margin-top: -10px;">社区店</span></a>
+		</li>
+	</ul>
+</div></div>
+            <!--<img class="none" src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/shop.gif" />-->
+        <!-- 底部导航分类widget end -->
+
+        <div class="fr">
+			<a class="cart" id='cart_box'><em id='count_cart' class="none"></em>购物车</a>
+			<a class="myAccount" onclick="javascript:;" is_login='0'>我的账户</a>
+		</div>
+    </div>
+</div>
+<!--底部结束-->
+<script type='text/javascript'>
+var tab_index = '7';
+$('.tab_box li').eq(tab_index).addClass('current').siblings().removeClass('current');
+$('.tab_box li').eq(tab_index).find('.none').removeClass('none').siblings('img').addClass('none');
+if(tab_index = '7'){
+	$('.tab_box li').eq(tab_index).find('.none').removeClass('none');
+}
+
+</script>
+
+<!--登录弹框-->
+<div class="cover none"></div>
+<div class="loginWindow none">
+   <ul class="clearfix or_title">
+    	<li class="curr"><a href="javascript:;">会员登录</a></li>
+        <li><a href="javascript:;">合作伙伴</a></li>
+    </ul>
+    <div class="orli_con">
+    	<!--会员登录-->
+        <div class="loginInputInfo">
+            <label>手机号</label><input id="login_customer" type="text" class="txt inputPhone" id='login_customer' value="" placeholder="请输入手机号码"><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/remove_img.png" class="remove"><br>
+            <label>验证码</label><input id='login_yan' type="text" class="txt inputCode" value="" placeholder="请输入验证码">
+            <a onclick="get_verify_code('log');" id="able1" class=" getCode">获取验证码</a>
+            <a class="getCode none" id="btn1">59s重发</a><br>
+            <input type="button" value="登录" class="pinkBtn" onclick="login('customer');"><br>
+            <p class="tr"><a class="gotoRegister">注册</a></p>
+            <p class="succe none">验证码发送成功，10分钟有效</p>
+        </div>
+        <!--合作伙伴-->
+        <div class="loginInputInfo none">
+            <label>账&nbsp;&nbsp;号</label><input type="text" class="txt inputPhone" id='login_partner' value=""><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/remove_img.png" class="remove"><br>
+            <label>密&nbsp;&nbsp;码</label></label><input type="password" class="txt inputPhone inputCode" id='login_pass' value=""><img src="http://lbs.lber.com.cn/ishop/web/theme/lber/zh_cn/shop/images/getjp_img.png" class="sz_jp">
+            <p class="codeError"></p>
+            <input type="button" value="登录" class="pinkBtn" onclick="login('partner');"><br>
+            <p class="tr"><a class="gotoRegister">注册</a></p>
+        </div>
+	</div>
+</div>
+<div class="registerWindow none">
+    <p>注册</p>
+    <div class="loginInputInfo">
+        <label>手机号</label><input type="text" class="txt inputPhone" name='name' value=""><br>
+        <label>密&nbsp;&nbsp;&nbsp;码</label><input type="password" class="txt inputPhone" name="password" value=""><br>
+        <label>验证码</label><input type="text" class="txt inputCode" name="yan" value="">
+        <a onclick="get_verify_code('reg');" id="able2" class="getCode">获取验证码</a>
+        <a class="getCode none" id="btn2">59s后重发</a><br>
+        <p class="codeError none">输入的验证码有误</p>
+        <input type="button" value="注册" class="pinkBtn" name="" onclick="reg()"><br>
+        <p class="tr"><a class="gotoRegister">登录</a></p>
+    </div>
+</div>
+
+
+
+<script>
+$(function(){
+	function tabFun(tab,content,curren){
+	    var conNum = 0;
+	    $(tab).click(function(){
+	        $(this).addClass(curren).siblings().removeClass(curren);
+	        conNum =$(this).index();
+	        $(content).eq(conNum).show().siblings().hide();
+	        return false;
+	    });
+	}
+	tabFun(".or_title>li",".orli_con>div","curr");
+
+	jQuery('.remove').click(function(){
+		jQuery(this).prev().val('');
+	});
+});
+
+    //注册
+    function reg(){
+        var reg_tel = $.trim($('input[name=name]').val());
+        var reg_password = $.trim($('input[name=password]').val());
+        var reg_yan = $.trim($('input[name=yan]').val());
+
+        if(reg_tel == ""){
+            alert('手机不能为空！');
+            return false;
+        }
+        if( !(/^[0-9]{11}$/.test(reg_tel)) ){
+            alert('手机号码格式有误，请重新输入');
+            return false;
+        }
+
+        if(!(/^(\w){6,20}$/.test(reg_password))){//校验密码：只能输入6-20个字母、数字、下划线
+            alert('密码只能输入6-20个字母、数字、下划线');
+            return false;
+        }
+
+        if(reg_yan == ""){
+            alert('验证码不能为空！');
+            return false;
+        }
+
+        var parameter = new Object();
+        parameter['tel'] = reg_tel;
+        parameter['password'] = reg_password;
+        parameter['yan'] = reg_yan;
+        var url = "?app_act=member/register";
+        var params = parameter;
+        Ajax.call(url,params,
+            function(s) {
+                if(s.status == 1) {
+                	$('.cover').hide();
+                    $('.registerWindow').hide();
+                    $('.greyDiv1').hide();
+                	$('[is_login]').attr('is_login',1);
+                	IShopCartList.reload_data();
+                }else{
+                    alert(s.message);
+                }
+            },'POST', 'json');
+
+    }
+
+    //登录
+    function login(type){
+        var parameter = new Object();
+        if( type=='customer' ){
+        	var login_customer = jQuery.trim(jQuery('#login_customer').val());
+        	var login_yan = jQuery.trim(jQuery('#login_yan').val());
+
+        	if(login_customer == "" || !(/^[0-9]{11}$/.test(login_customer))){
+                jQuery("#login_customer").focus();
+                alert('手机号不能为空或错误');
+                return false;
+            }else if( login_yan=='' ){
+            	alert('验证码不能为空');
+                return false;
+            }
+        	parameter['username'] = login_customer;
+        	parameter['yan'] = login_yan;
+        }else if( type=='partner' ){
+        	var login_partner = jQuery.trim(jQuery('#login_partner').val());
+            var login_pass= jQuery.trim(jQuery('#login_pass').val());
+			if( login_partner=='' ){
+				jQuery('#login_partner').focus();
+				alert('账号不能为空');
+				return false;
+		    }else if( login_pass=='' ){
+		    	alert('密码不能为空');
+				return false;
+		    }
+			parameter['username'] = login_partner;
+        	parameter['password'] = login_pass;
+        }
+        
+        var url = "?app_act=member/login";
+        var params = parameter;
+
+        Ajax.call(url,params,
+            function(s) {
+                if(s.status == 1) {
+                    $('.cover').hide();
+                    $('.greyDiv1').hide();
+                    $('.loginWindow').hide();
+                    $('[is_login]').attr('is_login',1);
+                    IShopCartList.reload_data();
+                }else{
+                    alert(s.message);
+                }
+            },'POST', 'json');
+    }
+
+    //获取验证码
+    var time = 60;
+    var mobile = '';
+    //判断时间是否为60秒
+    var interval = '';
+    function get_verify_code(obj){
+        if (obj == 'log') {
+            var login_tel = jQuery.trim($('#login_customer').val());
+        } else if (obj == 'reg') {
+            var login_tel = jQuery.trim($('input[name=name]').val());
+        }
+        var send_time = 0;
+        var timestamp =Date.parse(new Date());
+        timestamp /=1000;
+
+        if(login_tel == "" || !(/^[0-9]{11}$/.test(login_tel))){
+            alert('手机号码不能为空或错误');
+            return false;
+        }
+
+        if(timestamp - send_time <= 60 && login_tel == mobile){
+            alert('60秒内仅能获取一条验证码，请稍后重试！');
+            return false;
+        }
+        mobile = login_tel;
+        //判断弹出的 是登陆还是注册？
+        var mark = '';
+        if($('.loginWindow').css('display') !='block' && $('.registerWindow').css('display') == 'block'){
+             mark = 'reg';
+            var type = 'reg';
+        } else if ($('.loginWindow').css('display') == 'block' && $('.registerWindow').css('display') != 'block'){
+             mark = 'log';
+            var type = 'forget';
+        }
+        if (mark == 'log') {
+            $('#able1').hide();
+            $('#btn1').show();
+            count_down(time,mark);
+            var url = "?app_act=member/get_verification_code";
+            var params = "tel="+login_tel+"&type="+type+"&salt=21191371222d4e8d5d85df154ff555f2a1d55";
+            Ajax.call(url,params, function(s){
+                    if(s.status == 1){
+                        if( s.data ){
+                            jQuery('.succe').show();
+                            setTimeout(function(){
+                            	jQuery('.succe').hide();
+                            },2000);
+                        }
+                    }else{
+                    	clearInterval(interval);
+                    	$('#able1').show();
+                    	$('#btn1').hide();
+                        alert(s.message);
+                        time=60;
+                    }
+                },'POST','json');
+        } else if (obj == 'reg'){
+            Ajax.call('/ishop/web/?app_act=member/is_exists',{mobile:login_tel},function(s){
+                if( s.status==1 ){
+                    if( confirm('此手机号码已经注册，请直接登录') ){
+                    	jQuery('.registerWindow').hide();
+                        jQuery('.loginWindow').show();
+                        $('#btn1').hide();
+                        $('#btn2').hide();
+                    }
+                }else{
+                	$('#able2').hide();
+                    $('#btn2').show();
+                    count_down(time,mark);
+                    var url = "?app_act=member/get_verification_code";
+                    var params = "tel="+login_tel+"&type="+type+"&salt=211242b416a588d96c2271f4f5f526b209ae6";
+                    Ajax.call(url,params, function(s){
+                            if(s.status == 1){
+                                if( s.data ){
+                                    alert(s.data);
+                                }
+                            }else{
+                                if( mark=='log' ){
+                                	$('#btn1').html('重新获取');
+                                }else{
+                                	$('#btn2').html('重新获取');
+                                }
+                                alert(s.message);
+                            }
+                        },'POST','json');
+                }
+            },'POST','json');
+        }
+    }
+
+    function count_down(n,obj) {
+        if (n >= 0) {
+        	if (obj == 'log') {
+                $('#btn1').html(n + 's后重发');
+            }else {
+                $('#btn2').html(n + 's后重发');
+            }
+        	interval = setTimeout(function() {
+                n-- ;
+                count_down(n,obj);
+            }, 1000);
+        } else {
+            if (obj == 'log') {
+                $('#able1').html('重新获取').show();
+                $('#btn1').hide();
+            } else {
+                $('#able2').html('重新获取').show();
+                $('#btn2').hide();
+            }
+            time = 60;
+            clearInterval(interval);
+        }
+    }
+</script>
+    </body>
+
+</html>

@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 	<head>
 		<meta charset="UTF-8" />
 		<title>jquery鼠标跟随导航效果</title>
@@ -58,8 +57,9 @@
 						var index = $(this).index(); //获取滑过元素索引值
 						var leftW = $(this).position().left; //获取滑过元素Left值
 						var currentW = $nav.find("a").eq(index).innerWidth(); //获取滑过元素Width值
+						//console.log(leftW);
 						$navcur.stop().animate({
-							left: leftW,
+							left: lreftW,
 							width: currentW
 						}, 300);
 					}, function() {
@@ -86,5 +86,4 @@
 			<div class="nav-current"></div>
 		</div>
 	</body>
-
 </html>

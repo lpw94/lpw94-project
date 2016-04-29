@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.table-head {
+				padding-right: 17px;
+				background-color: #999;
+				color: #000;
+			}
+			
+			.table-body {
+				width: 100%;
+				height: 300px;
+				overflow-y: scroll;
+				border: 1px solid #000;
+			}
+			
+			.table-head table,
+			.table-body table {
+				width: 100%;
+			}
+			
+			.table-body table tr:nth-child(2n+1) {
+				background-color: #f2f2f2;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<div style="width: 800px;">
+    <div class="table-head">
+    <table>
+        <colgroup>
+            <col style="width: 80px;" />
+            <col />
+        </colgroup>
+        <thead>
+            <tr><th>序号</th><th>内容</th><th>序号</th><th>内容</th><th>序号</th><th>内容</th></tr>
+        </thead>
+    </table>
+    </div>
+    <div class="table-body">
+    <table>
+        <colgroup><col style="width: 80px;" /><col /></colgroup>
+        <tbody>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+            <tr><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td><td>1</td><td>我只是用来测试的</td></tr>
+        </tbody>
+    </table>
+    </div>
+</div>-->
+
+		<div class="header_nav">
+			<div class="w1200">
+				<div class="all_kinds fl clearfix">
+					<div class="hover_down fl in_b">
+						<a href="/test/ishop/web/?app_act=screen/lists/do_index">全部产品分类</a>
+						<div class="nav_title_bg none">
+							&nbsp;</div>
+						<div class="nav_title none">
+							<ul>
+								<li>
+									<a href="/test/ishop/web/?app_act=screen/lists/categ#1F">母婴系列</a>
+									<div class="nav_con">
+										<dl>
+											<dt onclick="location.href='/test/ishop/web/?app_act=screen/index/mpow&amp;code=N'">
+奶粉</dt>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=美素佳儿'">
+												美素佳儿</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=新加坡奥他美'">
+												新加坡奥他美</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=美素佳儿'">
+												美素佳儿</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=新加坡奥他美'">
+												新加坡奥他美</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=美素佳儿'">
+												美素佳儿</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=新加坡奥他美'">
+												新加坡奥他美</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=美素佳儿'">
+												美素佳儿</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=新加坡奥他美'">
+												新加坡奥他美</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=美素佳儿'">
+												美素佳儿</dd>
+											<dd onclick="location.href='/test/ishop/web/?app_act=screen/lists/do_index&amp;q=新加坡奥他美'">
+												新加坡奥他美</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<a href="/test/ishop/web/?app_act=screen/lists/categ#2F">保健品系列</a>
+									<div class="nav_con">
+										<dl>
+											<dt>
+嘎嘎嘎</dt>
+											<dd>
+												美素佳儿</dd>
+											<dd>
+												新加坡奥他美</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<a href="/test/ishop/web/?app_act=screen/lists/categ#3F">美妆系列</a>
+									<div class="nav_con">
+										<dl>
+											<dt>
+哈哈哈哈</dt>
+											<dd>
+												美素佳儿</dd>
+											<dd>
+												新加坡奥他美</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<a href="/test/ishop/web/?app_act=screen/lists/categ#4F">护肤系列</a>
+									<div class="nav_con">
+										<dl>
+											<dt>
+嘎嘎嘎</dt>
+											<dd>
+												美素佳儿</dd>
+											<dd>
+												新加坡奥他美</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<a href="/test/ishop/web/?app_act=screen/lists/categ#5F">日化系列</a>
+									<div class="nav_con">
+										<dl>
+											<dt>
+哈哈哈哈</dt>
+											<dd>
+												美素佳儿</dd>
+											<dd>
+												新加坡奥他美</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<a href="/test/ishop/web/?app_act=screen/lists/categ#6F">奢侈品系列</a>
+									<div class="nav_con">
+										<dl>
+											<dt>
+哈哈哈哈</dt>
+											<dd>
+												美素佳儿</dd>
+											<dd>
+												新加坡奥他美</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--all_kinds ed-->
+				<ul class="pr clearfix fl clearfix">
+					<li class="current">
+						<a href="/test/ishop/web/?app_act=screen/index/">首页</a></li>
+					<li>
+						<a href="/test/ishop/web/?app_act=screen/index/mpow&amp;code=N">奶粉 </a></li>
+					<li>
+						<a href="#">纸尿裤</a></li>
+					<li>
+						<a href="#">海外直邮</a></li>
+					<li>
+						<a href="#">优惠活动</a></li>
+					<li>
+						<a href="#">优惠活动</a></li>
+					<li>
+						<a href="#">关于乐贝尔</a></li>
+				</ul>
+			</div>
+			<!--w1200 ed-->
+		</div>
+
+	</body>
+
+</html>

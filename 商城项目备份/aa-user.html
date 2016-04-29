@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://lbs.lber.com.cn/?app_act=screen/my/do_index -->
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<meta content="all" name="robots">
+		<meta name="Copyright" content="">
+		<meta name="keywords" content="乐贝尔进口免税商城">
+		<meta name="description" content="乐贝尔进口免税商城">
+		<title>用户中心</title>
+		<link rel="stylesheet" type="text/css" href="user/basic.css">
+		<link rel="stylesheet" type="text/css" href="user/common.css">
+		<link rel="stylesheet" type="text/css" href="user/theme.css">
+		<script type="text/javascript" src="user/jquery-1.7.min.js"></script>
+		<script type="text/javascript" src="user/public.js"></script>
+		<style type="text/css">
+			.my_dd p{
+				font-size: 14px;
+				color: #515250;
+				text-indent: 20px;
+				line-height: 24px;
+			}
+		</style>
+
+	</head>
+
+	<body onkeydown="BindEnter(event)" style="position: static;">
+		<div class="header">
+			<div class="header_top">
+				<div class="w1200 clearfix">
+					<div class="fl"><a href="http://lbs.lber.com.cn/?app_act=screen/index/do_index" class="index">粤港跨境商城</a></div>
+					<div class="fr nav_top pr">
+						<a href="http://lbs.lber.com.cn/?app_act=screen/my/do_index" class="account">13058165962</a><span class="fl">&nbsp;</span>
+						<a href="http://lbs.lber.com.cn/?app_act=screen/member/quit">退出</a><span class="fl">|</span>
+						<div class="hover_down fl block clearfix">
+							<a href="http://lbs.lber.com.cn/?app_act=screen/my/do_index" class="personal_center">个人中心</a><span class="fl">|</span>
+							<div class="a_child center none">
+								<img src="user/hover.png" class="ho">
+								<ul>
+									<li onclick="location.href=&#39;/?app_act=screen/my/order_list&#39;">我的订单</li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/comment_list&#39;">我的评价</li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/return_apply_list&#39;">退换货查看 </li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/fave_list&#39;">我的收藏</li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/my_distribution&#39;">我的分销</li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/account&#39;">个人资料</li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/coupon&#39;">优惠券</li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/integral&#39;">我的贝贝币</li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/account_manage&#39;">账户管理</li>
+									<li onclick="location.href=&#39;/?app_act=screen/my/address&#39;">收货地址 </li>
+								</ul>
+							</div>
+						</div>
+						<div class="hover_down fl block clearfix">
+							<a href="javascript:;" class="mobile_version">手机APP</a><span class="fl">|</span>
+							<div class="a_child version none">
+								<img src="user/hover.png" class="ho">
+								<div class="fl ml15 mr10">
+									<img src="user/os_code.png" width="150" height="150" class="mt10">
+									<p class="tc">app下载</p>
+								</div>
+							</div>
+						</div>
+						<a href="http://lbs.lber.com.cn/?app_act=screen/help/lists">帮助中心</a><span class="fl">|</span>
+						<a href="javascript:;">客服热线</a><span class="fl phone_num">400-848-6262</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="header_mid">
+				<div class="w1200 pr clearfix">
+					<div class="clearfix fl" style="width:545px">
+						<img onclick="location.href=&quot;/?app_act=screen/index/do_index&quot;" class="logo pointer" src="user/logo.png">
+						<img src="user/three_quality.png" class="fr mt35">
+					</div>
+					<div class="head_cart hover_down fr clearfix" id="cart_snap" is_show="0"><a href="http://lbs.lber.com.cn/?app_act=screen/cart/do_index" class="cart">我的购物车<em id="count_cart1"></em><i></i></a>
+						<div class="a_child cart_box none ">
+							<div class="empty_cart">
+								<p>暂时没有商品</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="fr" style="width: 460px;">
+						<div class="search_form clearfix">
+							<input name="q" type="text" id="search_1" class="txt" placeholder="寻找商品" value="">
+							<input name="" type="button" class="btn" onclick="search_all(1,1)">
+						</div>
+						<div>
+							<div class="hot_search">
+								<a href="http://lbs.lber.com.cn/ishop/web/?app_act=screen/lists/do_index&amp;q=%E7%BE%8E%E5%9B%BD%E5%98%89%E5%AE%9D">美国嘉宝</a> <a href="http://lbs.lber.com.cn/ishop/web/?app_act=screen/lists/do_index&amp;q=%E7%BE%8E%E7%B4%A0%E4%BD%B3%E5%84%BF">美素佳儿</a>								<a href="http://lbs.lber.com.cn/ishop/web/?app_act=screen/lists/do_index&amp;q=%E7%89%9B%E6%A0%8F">牛栏</a> <a href="http://lbs.lber.com.cn/ishop/web/?app_act=screen/lists/do_index&amp;q=%E6%83%A0%E6%B0%8F">惠氏</a> <a href="http://lbs.lber.com.cn/ishop/web/?app_act=screen/lists/do_index&amp;q=%E6%97%A5%E6%9C%AC%E8%8A%B1%E7%8E%8B">日本花王</a>								<a href="http://lbs.lber.com.cn/ishop/web/?app_act=screen/lists/do_index&amp;q=Whoo%E9%9F%A9%E5%90%8E">Whoo韩后</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header_nav">
+				<div class="w1200 clearfix pr">
+					<div class="all_kinds fl clearfix">
+						<div class="hover_down fl in_b">
+							<a href="http://lbs.lber.com.cn/?app_act=screen/lists/do_index">全部产品分类</a>
+						</div>
+					</div>
+					<!--all_kinds ed-->
+
+					<div>
+						<ul class="pr clearfix fl">
+							<li>
+								<a href="http://lbs.lber.com.cn/ishop/web/?app_act=screen/index/do_index">首页</a></li>
+							<li>
+								<a href="http://www.lber.com.cn/?app_act=screen/lists/do_index&amp;cat=A01">婴儿奶粉 </a></li>
+							<li>
+								<a href="http://www.lber.com.cn/?app_act=screen/lists/do_index&amp;cat=A03">宝宝辅食</a></li>
+							<li>
+								<a href="http://www.lber.com.cn/?app_act=screen/lists/do_index&amp;cat=A21">纸尿裤</a></li>
+							<li>
+								<a href="http://www.lber.com.cn/?app_act=screen/lists/do_index&amp;cat=B">美妆个护</a></li>
+							<li>
+								<a href="http://www.lber.com.cn/?app_act=screen/lists/do_index&amp;cat=C">营养保健</a></li>
+							<li>
+								<a href="http://www.lber.com.cn/?app_act=screen/lists/do_index&amp;q=%E6%B5%B7%E5%A4%96%E7%9B%B4%E9%82%AE">海外直邮</a></li>
+							<li>
+								<a href="http://www.lber.com.cn/?app_act=screen/page/&amp;code=12">正品保障</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--w1200 ed-->
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="w1200">
+				<div class="personal">
+					<div class="personal_head">
+						<a href="http://lbs.lber.com.cn/?app_act=screen/index/do_index">首页&gt;</a>
+						<a href="javascript:;">个人中心</a>
+					</div>
+					<!--personal_head ed-->
+					<div class="personal_article clearfix">
+						<div class="personal_l fl">
+							<div class="nav_list">
+								<ul>
+									<li class="ul_head"><a href="javascript:;"><em><img src="user/per_nav.png"></em>我的交易</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/order_list">我的订单</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/comment_list">我的评价</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/return_apply_list">退换货查看</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/fave_list">我的收藏</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/my_distribution">我的分销</a></li>
+								</ul>
+								<ul>
+									<li class="ul_head">
+										<a href="javascript:;">
+											<em><img src="user/per_nav.png"></em>资料管理
+										</a>
+									</li>
+
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/account">个人资料</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/coupon">优惠劵</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/integral">我的贝贝币</a></li>
+								</ul>
+								<ul class="pb30">
+									<li class="ul_head"><a href="javascript:;"><em><img src="user/per_nav.png"></em>我的帐号</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/account_manage">账户管理</a></li>
+									<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/address">收货地址</a></li>
+									<li class="nav_f nav_h">400-848-6262</li>
+									<li class="nav_f">客服电话<em>免长途费</em></li>
+									<li class="nav_f">周一至周五9:00-22:00</li>
+								</ul>
+							</div>
+							<!--nav_list ed-->
+						</div>
+						<!--personal_l ed-->
+
+						<div class="personal_r fl">
+
+							<div class="person_r_head clearfix">
+								<div class="person_r_head_l fl">
+									<h3>
+                            <img class="dLoading" src="user/per_tx.png" original="http://120.76.152.219/theme/lber/zh_cn/screen/images/per_tx.png" style="display: inline;">
+                            <em>
+                                <img class="dLoading" src="user/per_txbj.png" original="http://120.76.152.219/theme/lber/zh_cn/screen/images/per_txbj.png" style="display: inline;">
+                            </em><i>编辑</i></h3>
+								</div>
+								<div class="personal_r_head_r fl">
+									<ul>
+										<li class="per_a"><span class="invite-code">邀请码</span> 13058165962</li>
+										<!-- <li class="per_b">v1</li> -->
+										<li class="per_c">账户安全<em><i style="width:30%"></i></em><span></span></li>
+									</ul>
+								</div>
+								<h5 style="position:absolute;right: 20px; text-decoration: underline; top:15px;">
+                    	<a style="font-size:14px; color:#005ea7;" href="http://lbs.lber.com.cn/?app_act=screen/my/address">我的收货地址</a>
+                    </h5>
+							</div>
+							<!--personal_r_head ed-->
+							<div class="personal_art">
+								<div class="my_dd clearfix">
+									<h1><span>服务点</span></h1>
+									.<p class="shop-name">店名 : 前海保税店</p>
+									<p class="contact-name">联系人 : 李小姐</p>
+									<p class="service-tel">服务电话 : 400-848-6262 </p>
+									<p class="shop-address">地址：广东省深圳市南山区科技中三路</p>
+								</div>
+								<div class="my_dd clearfix">
+									<h1><span>我的订单</span></h1>
+									<ul>
+										<li>
+											<a href="http://lbs.lber.com.cn/?app_act=screen/my/order_list&amp;type=3">
+												<img class="dLoading" src="user/per_dfk.png" original="http://120.76.152.219/theme/lber/zh_cn/screen/images/per_dfk.png" style="display: inline;"><span>待付款<em>(7)</em></span></a>
+										</li>
+
+										<li>
+											<a href="http://lbs.lber.com.cn/?app_act=screen/my/order_list&amp;type=2">
+												<img class="dLoading" src="user/per_dfh.png" original="http://120.76.152.219/theme/lber/zh_cn/screen/images/per_dfh.png" style="display: inline;"><span>待发货<em></em></span></a>
+										</li>
+										<li>
+											<a href="http://lbs.lber.com.cn/?app_act=screen/my/order_list&amp;type=4">
+												<img class="dLoading" src="user/per_dhh.png" original="http://120.76.152.219/theme/lber/zh_cn/screen/images/per_dhh.png" style="display: inline;"><span>待收货<em></em></span></a>
+										</li>
+										<li>
+											<a href="http://lbs.lber.com.cn/?app_act=screen/my/order_list&amp;type=6">
+												<img class="dLoading" src="user/per_dpj.png" original="http://120.76.152.219/theme/lber/zh_cn/screen/images/per_dpj.png" style="display: inline;"><span>待评价<em></em></span></a>
+										</li>
+									</ul>
+								</div>
+								<!--my_dd ed-->
+								<div class="drist clearfix">
+									<h1><span>我的分销</span><em>我的佣金<i>0.00</i>元
+                                <img class="dLoading" src="user/person_tx.png" original="http://120.76.152.219/theme/lber/zh_cn/screen/images/person_tx.png" style="display: inline;"></em></h1>
+									<ul>
+										<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/my_distribution">分销商<span>0</span></a></li>
+										<li class="none"><a href="javascript:;">会员<span>0</span></a></li>
+										<li><a href="http://lbs.lber.com.cn/?app_act=screen/my/my_distribution&amp;tpl=order">分销订单<span>0</span></a></li>
+									</ul>
+								</div>
+								<!--my_dd ed-->
+								<div class="look_again">
+									<h1><span>看了又看</span></h1>
+								</div>
+								<!--look_again ed-->
+							</div>
+							<!--personal_art ed-->
+						</div>
+					</div>
+					<!--personal_article ed-->
+				</div>
+				<!--personal ed-->
+			</div>
+		</div>
+
+		
+
+		<div class="footer minw1200">
+
+			<div class="footer_middle">
+				<div class="w1200">
+					<div class="guide_list clearfix">
+						<dl>
+							<dt>购物指南</dt>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=6">购物须知</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=7">配送流程</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=8">验货与签收</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=9">支付方式</a></dd>
+						</dl>
+						<dl>
+							<dt>关于我们</dt>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=10">关于我们</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=11">联系我们</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=12">投诉举报</a></dd>
+						</dl>
+						<dl>
+							<dt>交易安全</dt>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=15">交易纠纷</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=14">交易条款</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=13">买家保障</a></dd>
+						</dl>
+						<dl>
+							<dt>售后服务</dt>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=19">服务承诺</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=18">售后服务政策</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=17">退货说明</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=16">退款说明</a></dd>
+						</dl>
+						<dl>
+							<dt>新手帮助</dt>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=23">购物流程</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=22">新手注册</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=21">用户协议</a></dd>
+							<dd><a href="http://lbs.lber.com.cn/?app_act=screen/help/do_index&amp;id=20">账户密码</a></dd>
+						</dl>
+						<dl class="last_guide">
+							<dd class="tel">400-848-6262</dd>
+							<dd><a href="javascript:;">周一至周日 9:00-18:00</a></dd>
+							<dd>
+								<a href="javascript:;" class="online"><img src="user/online.png"></a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div>
+
+					<div class="w1200">
+						<img src="user/feature.png">
+					</div>
+
+				</div>
+			</div>
+			<div>
+				<div class="footer_bottom tc">
+					<div class="Copyright">
+						<p>
+							© 国家支持跨境电商 www.lber.com.cn © 2015 深圳市粤港跨境电子商务有限公司 All Right Res 客服热线：400-848-6262</p>
+						<p>
+							增值电信业务营业许可证：粤ICP备 15010924号</p>
+						<p class="mt35">
+							<a class="mr20" href="javascript:;"><img src="user/foot_img1.png"></a>
+							<a href="javascript:;"><img src="user/foot_img2.png"></a>
+							<a href="http://szcert.ebs.org.cn/ad6684c4-4786-4416-833f-158e76273d9a" target="_blank"><img src="user/newGovIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="124" height="46" border="0" style="border-width:0px;border:hidden; border:none;"></a>
+						</p>
+					</div>					
+				</div>
+			</div>
+
+		</div>
+		<!--footer ed-->
+	</body>
+
+</html>

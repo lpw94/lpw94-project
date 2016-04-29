@@ -1,0 +1,49 @@
+@charset "utf-8";
+html,body{ width:1920px; height:100%; /*overflow:hidden;*/}
+body{ font:12px/150% "Microsoft Yahei",Arial,sans-serif; word-wrap:break-word;}
+.wrapper{ width:1950px; overflow-x:hidden; overflow-y:scroll;}}
+input{ border:0 none;  font-family:"Microsoft Yahei", sans-serif;}
+input,button,select,textarea{outline:none; } 
+textarea{resize:none}
+a{ color:#000;}
+a:focus{outline:none;}
+.allBorder{ border:1px solid;}
+.wB100{ width:100%;}
+.wordRed{ color:#f47a86;}
+.wordGreen{ color:#228800;}
+.wordPink{ color:#ff64a2;}
+.wordGreen{ color:#0c8d02;}
+
+.colorPink{ color:#ff0066;}
+.pinkBg{ background-color:#ff0066;}
+.colorWhite{ color:#fff; }
+.color0{ color:#000;}
+.color3{ color:#333;}
+.color6{ color:#666;}
+.colorB{ color:#bababa;}
+.colorRed{ color:#ff0066;}
+.colorBlack{ color:#000;}
+
+/*头部*/
+.header_top{height:80px;}
+	.header_top .tel{margin-right:116px;}
+	.header_top .btn{margin-right:58px;}
+.top_line{ height:2px;background:url(../images/top_line.png) repeat-x; margin-top:9px;}
+
+
+	/*底部*/
+	.fixed_box{ position:fixed; bottom:0;height:98px;}
+     .fixed_btn{ height:98px; border-top:1px solid #e9e9e9;background-color:#fafafa;z-index:99;}
+	 .fixed_btn a{display:inline-block; font-size:24px; color:#fe4b92; height:75px; margin: 12px auto 0px auto;}
+			.tab_box li{ position:relative;float:left;width:180px;height:98px; text-align:center;}
+			.tab_box li a{display:inline-block;width:180px; font-size:24px; color:#fe4b92; margin: 12px auto 0px auto;}
+			.tab_box li.current{ background-color:#fe4b92;}
+			.tab_box li.current a{ color:#fff;}
+			.tab_box li img{ margin-bottom:12px;}
+
+			
+		.fixed_btn .cart{ line-height:118px;background:url(../images/bottom_nav_cart.png) 10px top no-repeat;  position:absolute; right:260px;}
+		.fixed_btn .cart em{ width:32px; height:23px; text-align:center; line-height:23px; font-size:20px; color:#fff; background:url(../images/cart_num.png) no-repeat; position:absolute; right:5px; bottom:60px; z-index:9;}
+		.fixed_btn .myAccount{ line-height:118px; background:url(../images/bottom_nav_myAccount.png) center top no-repeat; position:absolute; right:125px;}
+		.fixed_btn .myAccount1{ line-height:118px; background:url(../images/bottom_nav_myAccount.png) center top no-repeat; position:absolute; right:125px;}
+		.fixed_btn .selectBtn{ line-height:118px; background:url(../images/bottom_nav_select.png) center top no-repeat; position:absolute; right:35px;}
