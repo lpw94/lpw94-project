@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>分类</title>
+		<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//左上角下拉菜单
+				$('.leftMenu').on("click",function(e){
+					e.stopPropagation();    
+					$(this).children('.dropMenu').toggleClass('show');
+				});
+				/*点击空白处 弹出层消失*/
+			    $("body").on("click",function(e){
+			        var $target = $(e.target);
+			        if($target.closest(".dropMenu").length == 0){
+			            $('.leftMenu').children('.dropMenu').removeClass('show');
+			        }
+			    });
+			});			
+		</script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="leftMenu">
+				<ul class="dropMenu">
+					<i class="triangle"></i>
+					<li><a href="">母婴</a></li>
+					<li><a href="">保健品</a></li>
+					<li><a href="">美装</a></li>
+					<li><a href="">护肤</a></li>
+					<li><a href="">日化</a></li>
+					<li><a href="">奢侈品</a></li>
+					<li><a href="">关于乐贝尔</a></li>
+					<li><a href="">免税说明</a></li>
+				</ul>
+			</div>
+			商品分类
+		</header>
+		<div class="com-row">
+			<h3 class="tit c_e2">全部分类</h3>
+		</div>	
+		<div class="class-warp clearfix">
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+			<a class="item-img" href="javascript:;">
+				<span class="btr"></span>
+				<img src="images/1.jpg" />
+			</a>
+		</div>
+		<div class="com-row">
+			<h3 class="tit c_7a">热销商品</h3>
+		</div>
+		<!--推荐产品-->
+		<div class="recommend">
+
+			<div class="recommend-list">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="http://121.41.176.228/image/web/upload/mobile_index/re-pro.png" width="200px" height="100px"/>
+
+							<div class="product-state">
+								<p class="product-name">新加坡惠氏S-26金装奶粉三段...</p>
+								<p class="free-price"><em class="price">￥169.80</em> <del>￥188</del></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://121.41.176.228/image/web/upload/mobile_index/re-pro.png" width="200px" height="100px"/>
+
+							<div class="product-state">
+								<p class="product-name">新加坡惠氏S-26金装奶粉三段...</p>
+								<p class="free-price"><em class="price">￥169.80</em> <del>￥188</del></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://121.41.176.228/image/web/upload/mobile_index/re-pro.png" width="200px" height="100px"/>
+
+							<div class="product-state">
+								<p class="product-name">新加坡惠氏S-26金装奶粉三段...</p>
+								<p class="free-price"><em class="price">￥169.80</em> <del>￥188</del></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://121.41.176.228/image/web/upload/mobile_index/re-pro.png" width="200px" height="100px"/>
+
+							<div class="product-state">
+								<p class="product-name">新加坡惠氏S-26金装奶粉三段...</p>
+								<p class="free-price"><em class="price">￥169.80</em> <del>￥188</del></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://121.41.176.228/image/web/upload/mobile_index/re-pro.png" width="200px" height="100px"/>
+
+							<div class="product-state">
+								<p class="product-name">新加坡惠氏S-26金装奶粉三段...</p>
+								<p class="free-price"><em class="price">￥169.80</em> <del>￥188</del></p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--推荐产品-->
+		
+	</body>
+
+</html>

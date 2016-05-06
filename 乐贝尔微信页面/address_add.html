@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>新增地址</title>
+		<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".pay-select").click(function() {  
+					$(".pay-select").children(".pay-select-icon").removeClass("active")
+			        $(this).children(".pay-select-icon").addClass("active"); 
+			    });
+			    
+			    $(".addr-left").on("click",function(){
+			    	if($(this).hasClass("on")){
+			    		$(this).removeClass("on");
+			    	}else{
+			    		$(this).addClass("on");
+			    	}
+			    })
+			    $(".select-area").on("focus",function(){
+			    	$(".overlayer").show();
+			    	$(".select-area-box").show();
+			    	
+			    })
+			    $(".close").on("click",function(){
+			    	$(".select-area-box").hide();
+			    	$(".overlayer").hide();
+			    })
+			
+			});
+			
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="head-bar">
+			<a class="back" href="javascript:;"></a>
+			新增地址
+		</div>
+		<div class="addr-new">
+			<ul class="set-addr">
+				<li>
+					<div class="com-row pr"><span class="left-tit">收货人:</span><input class="ti60" type="text" placeholder="林某某" /></div>
+				</li>
+				<li>
+					<div class="com-row pr"><span class="left-tit">手机号码:</span><input class="ti80" type="text" placeholder="" /></div>
+				</li>
+				<li>
+					<div class="com-row pr"><span class="left-tit">身份证号码:</span><input class="ti100" type="text" placeholder="" /></div>
+				</li>
+				<li>
+					<div class="com-row pr">
+						<span class="left-tit">所在地区:</span>
+						<input class="select-area ti80" type="text" placeholder="" />
+						<span class="addr-icon c_f6">定位</span>
+						
+						
+					<div class="select-area-box">
+						<div class="com-row pr">
+							<div class="close"></div>
+							<p class="title">选择地区</p>
+							
+							<select name="sheng">
+								<option value="">广东省</option>
+							</select>
+							
+							<select name="shi">
+								<option value="">深圳市</option>
+							</select>
+							<select name="qu">
+								<option value="">南山区</option>
+							</select>
+							<a class="btn" href="javascript:;">确定</a>
+						</div>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="com-row pr"><span class="left-tit">详细地址:</span><input class="ti80" type="text" placeholder="" /></div>
+				</li>
+				<li>
+					<div class="com-row">
+							<div class="addr-left">
+					    		<span class="check-icon"></span>
+					    		设为默认地址
+					    	</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="overlayer"></div>
+		
+		<div class="com-row mt20">
+			<a class="btn" href="javascript:;">保存地址</a>
+		</div>
+		
+		
+		
+		
+
+
+		
+
+
+		<div class="clear">
+
+		</div>
+
+
+	</body>
+
+</html>

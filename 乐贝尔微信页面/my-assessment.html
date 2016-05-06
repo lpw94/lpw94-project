@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>我的评价</title>
+		<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/TouchSlide.1.1.js"></script>
+		<script src="js/jquery.raty.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			 $('.grade').raty({
+			 	path:"images",
+			 	number: function() {
+				    return $(this).attr('data-number');
+				},
+				readOnly: true, 
+				score: 3
+			 });
+			});			
+		</script>
+	</head>
+
+	<body>
+		<div class="head-bar">
+			<a class="back" href="javascript:;"></a>
+			我的评价
+			<a class="login-link" href="javascript:;">关闭</a>
+		</div>
+		     <dl class="rule-item mt10">
+		     	<dt>德国奥他美奶粉</dt>
+		     	<dd>
+		     		<div class="clearfix">
+		     			<div class="div"></div>
+			     		<div class="grade" data-number = "3"></div>
+			     		<p class="grade-txt">还好；还算满意，性价比还是蛮高的！</p>
+			     		<div class="bottom-bar clearfix">
+			     			<span class="fl">11:00</span>
+			     			<div class="right-box">
+								<span class="share-icon fl"></span>
+								<span class="trash-icon fr"></span>
+							</div>
+			     		</div>
+		     		</div>
+		     	</dd>
+		     </dl>
+		     <dl class="rule-item mt10">
+		     	<dt>德国奥他美奶粉</dt>
+		     	<dd>
+		     		<div class="clearfix">
+			     		<div class="grade" data-number = "3"></div>
+			     		<p class="grade-txt">还好；还算满意，性价比还是蛮高的！</p>
+			     		<div class="bottom-bar clearfix">
+			     			<span class="fl">11:00</span>
+			     			<div class="right-box">
+								<span class="share-icon fl"></span>
+								<span class="trash-icon fr"></span>
+							</div>
+			     		</div>
+		     		</div>
+		     	</dd>
+		     </dl>
+		    
+		
+	</body>
+
+</html>

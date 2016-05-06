@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>修改密码</title>
+		<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    $(".btn").on("click",function(){
+			    	$(".tip-info").css({"margin-left":-($(".tip-info").width()/2)+"px"})
+			    	$(".tip-info").stop(true,false).slideDown("",function(){
+			    		setTimeout(function(){
+			    			$(".tip-info").hide();
+			    		},2000)
+			    	})
+			    })
+			});
+			
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="head-bar">
+			<a class="back" href="javascript:;"></a>
+			修改密码
+		</div>
+		
+		<div class="sign-warp">
+				<ul class="ul-psw">
+					<li>
+						<div class="com-row pr"><span class="left-tit">原密码:</span><input class="ti60" type="text" placeholder="" /></div>
+					</li>
+					<li>
+						<div class="com-row pr"><span class="left-tit">新密码:</span><input class="ti60" type="text" placeholder="" /></div>
+					</li>
+					<li>
+						<div class="com-row pr"><span class="left-tit">确认新密码:</span><input class="ti90" type="text" placeholder="" /></div>
+					</li>
+				</ul>
+				
+				<div class="com-row mt10">
+					<p class="tip-msg red">两次输入密码不一致</p>
+				</div>
+				
+			<div class="com-row mt20">
+				<a class="btn" href="javascript:;">保存</a>
+			</div>
+		</div>
+		
+
+	</body>
+
+</html>

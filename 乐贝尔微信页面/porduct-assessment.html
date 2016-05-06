@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>商品评价</title>
+		<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/TouchSlide.1.1.js"></script>
+		<script src="js/jquery.raty.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			 $('.grade').raty({
+			 	path:"images"
+			 });
+			});			
+		</script>
+	</head>
+
+	<body>
+		<div class="head-bar">
+			<a class="back" href="javascript:;"></a>
+			发布评价
+		</div>
+		<div class="current-order mt10">
+			<div class="com-row">
+				<div class="order-left fl">
+					<img src="images/zq.png"/>
+				</div>
+				<div class="order-right">
+					<p>新加坡惠氏s-26金装奶粉</p>
+					<p>订单编号：151120123456</p>
+					<p>价格: <em class="price c_e2">￥88.00</em></p>
+				</div>
+			</div>
+		</div>
+		<div class="current-warp mt10">
+			<div class="com-row">
+				<ul class="pj-list">
+					<li><div class="good on"><i class="icon"></i>好评</div></li>
+					<li><div class="midle"><i class="icon"></i>中评</div></li>
+					<li><div class="poor"><i class="icon"></i>差评</div></li>
+				</ul>
+				<div class="write-txt clearfix">
+					<i class="triangle"></i>
+					<textarea class="write-area" placeholder="东西什么样，发表一下看法吧">
+						
+					</textarea>
+				</div>
+				<ul class="updata-list mt20">
+					<li><a class="camera" href="javascript:;"></a></li>
+					<li><a class="picture" href="javascript:;"></a></li>
+					<li><a class="picture" href="javascript:;"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="current-warp mt10">
+			<div class="com-row">
+				<div class="pj-warp">
+					<span class="fl">服务：</span>
+				    <div class="grade fl" data-number = "3"></div>
+			    </div>
+			</div>
+			<div class="com-row">
+				<div class="pj-warp">
+					<span class="fl">物流：</span>
+				    <div class="grade fl" data-number = "3"></div>
+			    </div>
+			</div>
+			<div class="com-row">
+				<div class="pj-warp">
+					<span class="fl">质量：</span>
+				    <div class="grade fl" data-number = "3"></div>
+			    </div>
+			</div>
+			<div class="com-row">
+				<p><label class="fr">匿名评价<input type="checkbox" value="" /></label></p>
+			</div>
+		</div>
+			
+		   <div class="com-row mt40">
+				<a class="btn" href="javascript:;">发布</a>
+			</div> 
+		
+	</body>
+
+</html>

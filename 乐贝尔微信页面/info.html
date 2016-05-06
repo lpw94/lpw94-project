@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人信息</title>
+<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- header begin--> 
+		<div class="head-bar">
+			<a class="back" href="javascript:;"></a>
+			个人信息
+		</div>
+		<!-- header end-->
+		<div class="greyBar"></div>
+		<!-- content begin -->
+		<div class="content">
+			<div class="list-Bar">
+				<a href="" style="height:40px;line-height:40px;padding:7px 0;">头像 
+					<span class="rightPic"><img src="images/set_my_pic.png" style="width:100%;"></span>
+				</a>
+			</div>
+			<div class="greyBar"></div>
+			<div class="list-Bar">
+				<div class="listDiv">用户名<span class="rightBox">12346</span></div>
+			</div>
+			<div class="list-Bar">
+				<a href="">昵称<span class="rightBox" style="margin-right:17px;">12346</span></a>
+			</div>
+			<div class="list-Bar">
+				<div class="listDiv">性别
+					<div class="sexBut">
+						<span change="男">女</span>
+						<input type="hidden" value="0" />
+					</div>
+				</div>
+			</div>
+			<div class="list-Bar">
+				<div class="listDiv">手机号码<span class="rightBox">12346</span></div>
+			</div>
+			<div class="list-Bar">
+				<a href="">身份证号码<span class="rightBox" style="margin-right:17px;">12346789011111111</span></a>
+			</div>
+			<div class="greyBar"></div>
+			<div class="list-Bar">
+				<a href="">修改密码</a>
+			</div>
+			<div class="list-Bar">
+				<a href="">验证邮箱</a>
+			</div>
+		</div>
+		<!-- content end -->
+	</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() { 
+	//设置性别的开关
+    $('.sexBut').each(function() {
+        $(this).bind("click", function() { 
+            var btn = $(this).find("span");
+            var change = btn.attr("change");
+            btn.toggleClass('male'); 
+
+            if(btn.attr("class") == 'male') { 
+                $(this).find("input").val("0");
+                btn.attr("change", btn.html()); 
+                btn.html(change);
+            } else { 
+                $(this).find("input").val("1");
+                btn.attr("change", btn.html()); 
+                btn.html(change);
+            }  
+            return false;
+        });
+    });
+});
+</script> 
+</body>
+</html>

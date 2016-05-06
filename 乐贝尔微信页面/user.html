@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我</title>
+<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!-- header begin--> 
+<div class="header-top">
+	<div class="left-Menu">
+		<ul class="drop-Menu">
+			<i class="triangle"></i>
+			<li><a href="">母婴</a></li>
+			<li><a href="">保健品</a></li>
+			<li><a href="">美装</a></li>
+			<li><a href="">护肤</a></li>
+			<li><a href="">日化</a></li>
+			<li><a href="">奢侈品</a></li>
+			<li><a href="">关于乐贝尔</a></li>
+			<li><a href="">免税说明</a></li>
+		</ul>
+	</div>
+	<div class="centerBox">
+		<div class="myImg"><img src="images/my_img.png"></div>
+		<p>18316993471 <span class="level">LV1</span></p>
+		<p>您目前累计积分为520</p>
+	</div>
+	<div class="rightIcon"></div>
+</div>
+<!-- header end-->
+<!-- 灰色间条 begin -->
+<div class="greyBar"></div>   
+<!-- 灰色间条 end -->
+<!-- content begin -->
+<div class="content">
+	<div class="listBar">
+		<a href=""><i class="frontIcon frontIcon1"></i>我的订单<span class="rightTxt">查看所有购买的商品</span></a>
+	</div>
+	<nav class="mylistBar">
+		<ul class="myList clearfix">
+			<li><a href=""><i class="icon icon1 pr"><i class="info">1</i></i><span>待付款</span></a></li>
+			<li><a href=""><i class="icon icon2"></i><span>待发货</span></a></li>
+			<li><a href=""><i class="icon icon3"></i><span>待收货</span></a></li>
+			<li><a href=""><i class="icon icon4"></i><span>待评价</span></a></li>
+			<li style="width:23%;"><a href=""><i class="icon icon5"></i><span>退款/售后</span></a></li>
+		</ul>
+	</nav>
+	<div class="greyBar"></div>  
+	<div class="listBar">
+		<a href=""><i class="frontIcon frontIcon2"></i>我的收藏<span class="rightTxt">查看我的收藏</span></a>
+	</div>
+	<div class="listBar">
+		<a href=""><i class="frontIcon frontIcon3"></i>我的购物车<span class="rightTxt">查看我的购物车</span></a>
+	</div>
+	<div class="greyBar"></div>
+	<div class="listBar">
+		<a href=""><i class="frontIcon frontIcon4"></i>我的评价<span class="rightTxt">查看我的评价</span></a>
+	</div>
+	<div class="greyBar"></div>
+	<div class="listBar">
+		<a href=""><i class="frontIcon frontIcon5"></i>我的积分<span class="rightTxt">已有530积分,快来挥霍吧</span></a>
+	</div>
+	<div class="listBar">
+		<a href=""><i class="frontIcon frontIcon6"></i>我的优惠券<span class="rightTxt">1</span></a>
+	</div>
+	<div class="greyBar"></div>
+	<div class="listBar">
+		<a href=""><i class="frontIcon frontIcon7"></i>我的收货地址<span class="rightTxt">1</span></a>
+	</div>
+	<div class="greyBar"></div>
+</div>
+<!-- content end -->
+<script type="text/javascript">
+$(function(){
+	//左上角下拉菜单
+	$('.left-Menu').on("click",function(e){
+		e.stopPropagation();    
+		$(this).children('.drop-Menu').toggleClass('show');
+	});
+	/*点击空白处 弹出层消失*/
+    $("body").on("click",function(e){
+        var $target = $(e.target);
+        if($target.closest(".drop-Menu").length == 0){
+            $('.left-Menu').children('.drop-Menu').removeClass('show');
+        }
+    });
+});
+</script>
+</body>
+</html>

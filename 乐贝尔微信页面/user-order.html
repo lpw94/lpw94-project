@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>我的订单</title>
+		<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    $(".tab-order").hide(); 
+			    $("ul.tab-order-list li:first").addClass("active").show();   
+			    $(".tab-order:first").show();  
+			    $("ul.tab-order-list li").click(function() {  
+			        $("ul.tab-order-list li").removeClass("active");   
+			        $(this).addClass("active"); 
+			        var index = $("ul.tab-order-list li").index(this);
+			        $(".tab-order").eq(index).show().siblings(".tab-order").hide();   
+			        return false;  
+			    }); 
+			});		
+		</script>
+	</head>
+
+	<body>
+		<div class="head-bar">
+			<a class="back" href="javascript:;"></a>
+			我的订单
+			<a class="home-icon" href="javascript:;"></a>
+		</div>
+		<div class="order-tab mt10">
+			<ul class="tab-order-list">
+				<li class="active">全部</li>
+				<li>待付款</li>
+				<li>待收货</li>
+				<li>待评价</li>
+			</ul>
+		</div>
+		
+		<div class="order-detail mt10">
+			<div class="tab-order">
+				<div class="order-view">
+					<div class="order-code">
+						<div class="com-row">
+							订单号:624564564561 <a class="view-detail fr" href="javascript:;">查看详情<i class="right-arrow"></i></a>
+						</div>
+					</div>
+					<div class="order-content">
+						<div class="order-status">
+							<div class="com-row">
+								乐贝尔商城 <span class="fr" href="javascript:;"><i class="c_e2">未付款</i><i class="right-arrow"></i></span>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm bdt pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span></span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+			
+						<div class="amount">
+							<div class="com-row">
+								总计:<em class="number c_e2">177.00</em>
+								<a href="javascript:;" class="btn-pay fr">立即付款</a>
+								<a href="javascript:;" class="btn-cancel fr mr5">取消订单</a>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+				<div class="order-view">
+					<div class="order-code">
+						<div class="com-row">
+							订单号:624564564561 <a class="view-detail fr" href="javascript:;">查看详情<i class="right-arrow"></i></a>
+						</div>
+					</div>
+					<div class="order-content">
+						<div class="order-status">
+							<div class="com-row">
+								乐贝尔商城 (南山仓)<span class="fr" href="javascript:;"><i class="c_e2">拣货中</i><i class="right-arrow"></i></span>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm bdt pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+							<div class="com-row btm pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+			
+						<div class="amount">
+							<div class="com-row">
+								总计:<em class="number c_e2">177.00</em>
+								<a href="javascript:;" class="btn-cancel fr">确认收货</a>
+								<a href="javascript:;" class="btn-cancel fr mr5">取消订单</a>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+				<div class="order-view">
+			
+					<div class="order-content">
+						<div class="order-status">
+							<div class="com-row">
+								乐贝尔商城(南山仓) <span class="fr" href="javascript:;"><i class="c_e2">拣货中</i><i class="right-arrow"></i></span>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm bdt pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+							<div class="com-row btm pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+			
+						<div class="amount">
+							<div class="com-row">
+								总计:<em class="number c_e2">237.00</em>
+								<a href="javascript:;" class="btn-cancel fr">确认收货</a>
+								<a href="javascript:;" class="btn-cancel fr mr5">取消订单</a>
+							</div>
+						</div>
+					</div>
+			
+				</div>
+			</div>
+			
+			
+			
+			<div class="tab-order">
+				<div class="order-view">
+					<div class="order-code">
+						<div class="com-row">
+							订单号:624564564561 <a class="view-detail fr" href="javascript:;">查看详情<i class="right-arrow"></i></a>
+						</div>
+					</div>
+					<div class="order-content">
+						<div class="order-status">
+							<div class="com-row">
+								乐贝尔商城 <span class="fr" href="javascript:;"><i class="c_e2">未付款</i><i class="right-arrow"></i></span>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm bdt pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+			
+						<div class="amount">
+							<div class="com-row">
+								总计:<em class="number c_e2">177.00</em>
+								<a href="javascript:;" class="btn-pay fr">立即付款</a>
+								<a href="javascript:;" class="btn-cancel fr mr5">取消订单</a>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+			</div>
+			
+			<div class="tab-order">
+				<div class="order-view">
+					<div class="order-code">
+						<div class="com-row">
+							订单号:624564564561 <a class="view-detail fr" href="javascript:;">查看详情<i class="right-arrow"></i></a>
+						</div>
+					</div>
+					<div class="order-content">
+						<div class="order-status">
+							<div class="com-row">
+								乐贝尔商城 (南山仓)<span class="fr" href="javascript:;"><i class="c_e2">拣货中</i><i class="right-arrow"></i></span>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm bdt pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+							<div class="com-row btm pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+			
+						<div class="amount">
+							<div class="com-row">
+								总计:<em class="number c_e2">177.00</em>
+								<a href="javascript:;" class="btn-cancel fr">确认收货</a>
+								<a href="javascript:;" class="btn-cancel fr mr5">取消订单</a>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+				<div class="order-view">
+			
+					<div class="order-content">
+						<div class="order-status">
+							<div class="com-row">
+								乐贝尔商城(南山仓) <span class="fr" href="javascript:;"><i class="c_e2">拣货中</i><i class="right-arrow"></i></span>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm bdt pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+							<div class="com-row btm pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+			
+						<div class="amount">
+							<div class="com-row">
+								总计:<em class="number c_e2">237.00</em>
+								<a href="javascript:;" class="btn-cancel fr">确认收货</a>
+								<a href="javascript:;" class="btn-cancel fr mr5">取消订单</a>
+							</div>
+						</div>
+					</div>
+			
+				</div>
+			</div>
+			<div class="tab-order">
+				<div class="order-view">
+					<div class="order-code">
+						<div class="com-row">
+							订单号:624564564561 <a class="view-detail fr" href="javascript:;">查看详情<i class="right-arrow"></i></a>
+						</div>
+					</div>
+					<div class="order-content">
+						<div class="order-status">
+							<div class="com-row">
+								乐贝尔商城 <span class="fr" href="javascript:;"><i class="c_e2">未付款</i><i class="right-arrow"></i></span>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm bdt pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+						<div class="order-warp">
+							<div class="com-row btm pd10">
+								<div class="order-img fl">
+									<img src="images/zq.png" width="100" height="80" />
+								</div>
+								<div class="order-msg">
+									<p class="title"><span class="left-tit fl">新加坡惠氏S-26金装奶粉</span> <span class="fr">￥88.00</span></p>
+									<p class="num">X2</p>
+								</div>
+							</div>
+						</div>
+			
+						<div class="amount">
+							<div class="com-row">
+								总计:<em class="number c_e2">176.00</em>
+								<a href="javascript:;" class="btn-cancel fr">查看物流</a>
+								<a href="javascript:;" class="btn-cancel fr mr5">评价晒单</a>
+								<a href="javascript:;" class="btn-cancel fr mr5">取消订单</a>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>

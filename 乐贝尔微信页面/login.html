@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>登录</title>
+		<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('.tb-btn').on('click', function() {
+				if ($(this).hasClass('btn-off')) {
+					$(this).removeClass('btn-off').addClass("btn-on");
+					//.....
+					$(".psw").attr("type","text");
+				} else {
+					$(this).addClass('btn-off').removeClass("btn-on");
+					//.....
+					$(".psw").attr("type","password");
+				}
+			});
+		});
+		</script>
+	</head>
+
+	<body>
+		<div class="bg-white">
+		<div class="sign-warp">
+			<div class="com-row">
+				<div class="logo-img">
+					<img src="images/login-logo.png"/>
+				</div>
+				<ul class="ul-sign">
+					<li>
+						<span class="user-icon"></span>
+						<input class="username" type="text" name="username" placeholder="手机号码" />
+					</li>
+					<li>
+						<span class="user-icon psw-icon"></span>
+						<input class="psw" type="password" name="psw" value="11111111" placeholder="输入密码" />
+					    <span class="tb-btn btn-off"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="com-row mt20">
+				<p class="forget-tip"><a href="#" class="fr">忘记密码？</a></p>
+				<a class="btn" href="javascript:;">登录</a>
+				<a class="btn btn-default mt20" href="javascript:;">验证码登录</a>
+				<p class="login-tip">还没有账户？<a href="sign.html">立即注册</a></p>
+			</div>
+		</div>
+
+		</div>
+
+
+	</body>
+
+</html>

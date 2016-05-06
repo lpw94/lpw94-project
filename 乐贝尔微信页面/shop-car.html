@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<!-- Mobile Devices Support @begin -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	    <meta content="telephone=yes, address=yes" name="format-detection">
+	    <!-- apple devices -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	    <!-- Mobile Devices Support @end -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("dt .check-warp .check-icon").on("click",function(e){
+					if($(this).hasClass("on")){
+						$(this).removeClass("on");
+						$(this).parents("dt").siblings("dd").children(".com-row").children(".check-warp").children(".check-icon").removeClass("on");
+					}else{
+						$(this).addClass("on");
+						$(this).parents("dt").siblings("dd").children(".com-row").children(".check-warp").children(".check-icon").addClass("on");
+					}
+					e.stopPropagation();
+				})
+				
+				$("dd .check-warp .check-icon").on("click",function(e){
+					if($(this).hasClass("on")){
+						$(this).removeClass("on");
+					}else{
+						$(this).addClass("on");
+					}
+					e.stopPropagation();
+				})
+				
+				$(".car-check .all-check-icon").on("click",function(e){
+					if($(this).hasClass("on")){
+						$(this).removeClass("on");
+						$("dt .check-warp .check-icon").removeClass("on");
+						$("dd").children(".com-row").children(".check-warp").children(".check-icon").removeClass("on");
+					}else{
+						$(this).addClass("on");
+						$("dt .check-warp .check-icon").addClass("on");
+						$("dd").children(".com-row").children(".check-warp").children(".check-icon").addClass("on");
+					}
+					e.stopPropagation();
+				})
+				
+				//加的效果
+				$(".add").click(function(){
+				var n=$(this).prev().val();
+				var num=parseInt(n)+1;
+				if(num==0){ return;}
+				$(this).prev().val(num);
+				});
+				//减的效果
+				$(".jian").click(function(){
+				var n=$(this).next().val();
+				var num=parseInt(n)-1;
+				if(num==0){ return}
+				$(this).next().val(num);
+				});
+			});			
+		</script>
+	</head>
+
+	<body>
+		<div class="head-bar">
+			<a class="back" href="javascript:;"></a>
+			购物车(2)
+		</div>
+		<div class="shop-warp mt20">
+			<dl class="car-order">
+				<dt>
+					<div class="com-row">
+						<div class="check-warp"><span class="fl check-icon"></span></div>乐贝尔南山仓
+					</div>
+				</dt>
+				<dd>
+					<div class="com-row">
+						<div class="check-warp"><span class="fl check-icon mt40"></span></div>
+						<div class="order-img fl">
+							<img src="images/zq.png"/>
+						</div>
+						<div class="order-msg">
+							<p class="title">新加坡惠氏S-26金装奶粉   <span class="fr price">￥88.00</span></p>
+							<p class="small-title">草莓苹果味<span class="fr right-small"><del class="fr">￥188.00</del><br />x2</span></p>
+							<div class="amount">
+								<div class="gw_num fl">
+									<em class="jian">-</em>
+									<input type="text" size="2" value="1" class="num" />
+									<em class="add">+</em>
+								</div>	
+								<span class="fr remove"></span>
+								<span class="fr like"></span>
+							</div>		
+						</div>
+					</div>
+				</dd>
+			</dl>
+			<dl class="car-order">
+				<dt>
+					<div class="com-row">
+						<div class="check-warp"><span class="fl check-icon"></span></div>乐贝尔南山仓
+					</div>
+				</dt>
+				<dd>
+					<div class="com-row">
+						<div class="check-warp"><span class="fl check-icon mt40"></span></div>
+						<div class="order-img fl">
+							<img src="images/zq.png"/>
+						</div>
+						<div class="order-msg">
+							<p class="title">新加坡惠氏S-26金装奶粉   <span class="fr price">￥88.00</span></p>
+							<p class="small-title">草莓苹果味<span class="fr right-small"><del class="fr">￥188.00</del><br />x2</span></p>
+							<div class="amount">
+								<div class="gw_num fl">
+									<em class="jian">-</em>
+									<input type="text" size="2" value="1" class="num" />
+									<em class="add">+</em>
+								</div>	
+								<span class="fr remove"></span>
+								<span class="fr like"></span>
+							</div>		
+						</div>
+					</div>
+				</dd>
+				<dd>
+					<div class="com-row">
+						<div class="check-warp"><span class="fl check-icon mt40"></span></div>
+						<div class="order-img fl">
+							<img src="images/zq.png"/>
+						</div>
+						<div class="order-msg">
+							<p class="title">新加坡惠氏S-26金装奶粉   <span class="fr price">￥88.00</span></p>
+							<p class="small-title">草莓苹果味<span class="fr right-small"><del class="fr">￥188.00</del><br />x2</span></p>
+							<div class="amount">
+								<div class="gw_num fl">
+									<em class="jian">-</em>
+									<input type="text" size="2" value="1" class="num" />
+									<em class="add">+</em>
+								</div>	
+								<span class="fr remove"></span>
+								<span class="fr like"></span>
+							</div>		
+						</div>
+					</div>
+				</dd>
+			</dl>
+		</div>
+		
+		<div class="pay-bar">
+			<div class="total-left fl">
+				<div class="fl all-check-box">
+					<div id="all-check" class="car-check"><span class="fl all-check-icon"></span><span class="fr all-text">全选</span></div>
+				</div>
+				<div class="fr car-total">合计: <em class="price">￥88.00</em> <span class="pay-tip">(不含运费)</span></div>
+			</div>
+			<a class="btn btn-pay-right fr" href="javascript:;">去支付</a>
+		</div>
+		
+		
+	</body>
+
+</html>

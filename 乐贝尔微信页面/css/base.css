@@ -1,0 +1,152 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, input { margin: 0; padding: 0; border: none; outline: 0; font-size: 100%; vertical-align: baseline; }
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { -webkit-text-size-adjust: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { -webkit-user-select: none; -webkit-text-size-adjust: none; font-family:"微软雅黑", helvetica, arial; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+/* 全局 */
+*{ /*box-sizing: border-box; -webkit-box-sizing: border-box;*/font-family: "Microsoft YaHei", tahoma, arial, sans-serif;/*-webkit-tap-highlight-color:rgba(0,0,0,0);*/vertical-align: baseline;}
+html { height: 100%; }
+body { font-size: 62.5%; margin: auto; height: 100%; line-height: 22px; position: relative; text-align: justify; background-color: #eee;  overflow-x: hidden; color:#505050;}
+a { cursor: pointer; text-decoration: none; }
+a:link, a:visited {color: #505050; }
+img {border:0; margin: 0; padding: 0;}
+.fr{float: right;}
+.fl{float: left;}
+.clear{clear: both;height: 60px;}
+.c_88{color: #888585}
+.c_7a{color: #7a2bac}
+.c_59{color: #59d20b}
+.c_d2{color: #d2850b}
+.c_e2{color: #e20e40}
+.c_ed{color: #ed3780}
+.c_f0{color: #f0965a}
+.c_f6{color: #ff64a2;}
+.red{color: red;}
+.c_8d{color: #85D0F3;}
+/*通用*/
+.com-row{width: 94%;margin: 0 auto;}
+.com-row:after{clear: both;content: ".";height: 0;visibility: hidden;font-size: 0;display: block;}
+.clearfix{clear: both;}
+.clearfix:after{clear: both;content: ".";height: 0;visibility: hidden;font-size: 0;display: block;}
+.pr{position: relative;}
+i,em{font-style: normal;}
+.pd10{padding: 10px 0;}
+.bdt{border-top: 1px solid #e1e1e1;}
+.btm{border-bottom: 1px solid #e1e1e1;}
+body{min-width: 320px;overflow-x: hidden;}
+a.btn{display: block;width: 100%;height: 50px;text-align: center;line-height: 50px;color: #FFFFFF;overflow: hidden;background-color: #ff64a2;border-radius: 5px;font-size: 16px;}
+a.btn-default{color: #ED3780;border: 1px solid #ED3780;background-color: #FFFFFF;}
+a.btn-cancel{font-size: 14px;background: none;border: 1px solid #CCCCCC;color: #333;padding: 0 10px;height: 30px;line-height: 30px;border-radius: 3px;}
+a.btn-pay{font-size: 14px;color: #FFFFFF;padding: 0 10px;height: 31px;line-height: 30px;border-radius: 3px;overflow: hidden;background-color: #FF64A2;}
+.overlayer{display: none;z-index: 3;position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.6);}
+a.btn-call{display: block;width: 48%;height: 40px;text-align: center;line-height: 40px;color: #999;overflow: hidden;border: 1px solid #E1E1E1;border-radius: 5px;}
+a.btn-call i{display: inline-block;width: 20px;height: 20px; vertical-align: text-top;margin-right: 3px;}
+a.btn-call i.service{background: url(../images/service-icon.png) left center no-repeat;background-size: 100% 90%;}
+a.btn-call i.tel{background: url(../images/call-icon.png) left center no-repeat;background-size: 100% 100%;}
+a.red{color: red;}
+a.c_8d{color: #85D0F3;}
+a.btn-pay-right{width: 20%;border-radius: 0;background-color: #ff64a2;}
+a.link-rule{font-size: 16px;color: #7ec9ca;}
+.btn-small{cursor:pointer;display: block;width: 80%;height: 20px;text-align: center;line-height: 20px;color: #FFFFFF;overflow: hidden;background-color: #ff64a2;border-radius: 5px;font-size: 12px;margin: 0 auto;}
+
+/**侧边栏**/
+#sidePanel {
+	display: block;
+	position: fixed;
+	z-index: 100;
+	left: -280px;
+	top: 0;
+	width: 240px;
+	bottom: 0;
+	color: #fff;
+	padding-right: 40px;
+	transition: transform 0.25s;
+	-webkit-transition: transform 0.25s;
+}
+#sidePanel.show {
+	transform: translateX(280px);
+	-webkit-transform: translateX(280px);
+}
+#sidePanel .sideNav{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	background: #FFFFFF;
+	position: relative;
+	z-index: 2;
+}
+#sidePanel .close {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	border-radius: 100%;
+	background: #333;
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 3;
+	background:#333 url(../images/back-icon.png) center center no-repeat; background-size: 100% 100%;
+}
+#sidePanel .sideNav .sideNav-menu li{
+	padding-left: 70px;
+}
+#sidePanel .sideNav .sideNav-menu li .sideNav-menu-item{
+	display: block;
+	padding: 10px 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon1{
+	background: url(../images/left-menu1.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon2{
+	background: url(../images/left-menu2.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon3{
+	background: url(../images/left-menu3.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon4{
+	background: url(../images/left-menu4.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon5{
+	background: url(../images/left-menu5.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon6{
+	background: url(../images/left-menu6.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon7{
+	background: url(../images/left-menu7.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon8{
+	background: url(../images/left-menu8.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon9{
+	background: url(../images/left-menu9.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
+#sidePanel .sideNav .sideNav-menu li.left-icon10{
+	background: url(../images/left-menu10.png) 20px center no-repeat;
+	background-size: 30px 30px;
+}
