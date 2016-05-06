@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5canvas</title>
+		<style type="text/css">
+			#canvas{
+				display: block;
+				margin: 0 auto;
+				border: 1px solid #000;
+			}
+		</style>
+		<script type="text/javascript">
+		var tangram = [
+		   {p:[{x:0,y:0},{x:800,y:0},{x:400,y:400}],color:"#caff67"},
+		   {p:[{x:0,y:0},{x:400,y:400},{x:0,y:800}],color:"#67becf"},
+		   {p:[{x:800,y:0},{x:800,y:400},{x:600,y:600},{x:600,y:200}],color:"#ef3d61"},
+		   {p:[{x:600,y:200},{x:600,y:600},{x:400,y:400}],color:"#f9f51a"},
+		   {p:[{x:400,y:400},{x:600,y:600},{x:400,y:800},{x:200,y:600}],color:"#a594c0"},
+		   {p:[{x:200,y:600},{x:400,y:800},{x:0,y:800}],color:"#fa8ecc"},
+		   {p:[{x:800,y:400},{x:800,y:800},{x:400,y:800}],color:"#f6ca29"}
+		]
+		window.onload = function(){
+			var canvasW = 800;
+			var canvasH = 800;
+			var canvas = document.getElementById("canvas");
+			canvas.width = canvasW;
+			canvas.height = canvasH;
+			var context = canvas.getContext("2d");
+			for (var i=0; i<tangram.length;i++) {
+				draw(tangram[i],context)
+			}
+			
+			function draw(price,ctx){
+				ctx.beginPath();
+				ctx.moveTo(price.p[0].x,price.p[0].y);
+				for (var i = 1; i<price.p.length; i++){
+					ctx.lineTo(price.p[i].x,price.p[i].y);
+				}
+					
+				ctx.closePath();
+				ctx.fillStyle = price.color;
+				ctx.fill();
+				
+				ctx.lineWidth = 3;
+				ctx.strokeStyle = "#0080EA";
+				ctx.stroke();
+			}
+
+		}
+			
+			
+		</script>
+	</head>
+	<body>
+	
+		<canvas id="canvas">
+			当前浏览器不支持canvas，请更换浏览器试试。
+		</canvas>
+		
+	</body>
+</html>

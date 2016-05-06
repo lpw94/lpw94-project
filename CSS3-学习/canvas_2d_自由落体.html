@@ -11,6 +11,7 @@
 			}
 		</style>
 		<script type="text/javascript">
+		var ball = {x:600,y:100,r:20,g:2,vx:-5,vy:1,color:"#0080EA"}
 		window.onload = function(){
 			var canvasW = 800;
 			var canvasH = 600;
@@ -21,34 +22,26 @@
 			canvas.width = canvasW;
 			canvas.height = canvasH;
 			
-			context.beginPath();
-			context.moveTo(50,50);
-			context.lineTo(500,500);
-			context.lineTo(500,100);
-			context.lineTo(50,50);
-			context.closePath();
 			
-			context.lineWidth = 5;
-			context.strokeStyle = "#0080EA";
-			context.fillStyle = "#59D20B";
-			context.fill();
-			context.stroke();
-			
-			context.beginPath();
-			context.moveTo(100,200);
-			context.lineTo(600,700);
-			context.closePath();
-			
-			context.lineWidth = 5;
-			context.strokeStyle = "#0080EA";
-			context.stroke();
-			
-			
-			context.beginPath();
-			context.arc(650,300,100,0,2*Math.PI);
-			context.closePath();
-			context.stroke();
-		}
+			setInterval(function(){
+				//alert(000)
+			    render(context);
+				runball()
+				},50)
+		};
+		function runball(){
+			ball.x += ball.vx;
+			ball.y += ball.vy;
+			ball.vy += ball.g;
+		};
+		function render(cxt){
+			cxt.clearRect(0,0,cxt.canvas.width,cxt.canvas.height);
+			cxt.fillStyle = ball.color;
+			cxt.beginPath();
+			cxt.arc(ball.x,ball.y,ball.r,0,2*Math.PI);
+			cxt.closePath();			
+			cxt.fill();			
+		};
 			
 			
 		</script>
