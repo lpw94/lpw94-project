@@ -18,10 +18,17 @@
 	    <!-- Mobile Devices Support @end -->
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		
+		
 	</head>
 
 	<body>
 		<style type="text/css">
+			*{ font-family: "Microsoft YaHei", tahoma, arial, sans-serif;vertical-align: baseline;}
+			html { height: 100%; }
+			body { font-size: 62.5%; margin: auto; height: 100%;overflow-x: hidden;}
+			a { cursor: pointer; text-decoration: none; }
+			a:link, a:visited {color: #505050; }
+			img {border:0; margin: 0; padding: 0;}
 			.code_bg {
 				width: 100%;
 				height: 100%;
@@ -184,20 +191,26 @@
 				}
 		</style>
 		<div class="code_bg">
-			<p class="code_txt">“攻城狮”们正在努力开发中敬请期待....</p>
+			<p class="code_txt">乐贝尔粤港跨境环球购APP</p>
 			<div class="work_box">
-				<!--<div class="android_box"><p>android</p><i class="arrow"></i></div>
-				<div class="ios_box"><p>ios</p></div>
-				<div class="ipad_box"><p>ipad</p></div>-->
-			
-		
 			<img class="android_box" src="img/android_tip.png"/>
 			<img class="ios_box" src="img/ios_tip.png"/>
 			<img class="ipad_box" src="img/ipad_tip.png"/>
 			
 			<img class="work_img" src="img/work_pic.png"/>
 			</div>
-			<a class="btn_link_weixin" href="http://lbs.lber.com.cn/ishop/web/?app_act=mobile/index/&template=lber">去微信商城看看</a>				
+			<a class="btn_link_weixin" href="javascript:download();">点击下载APP</a>				
 		</div>
+		
+		<script type="text/javascript">
+		    function download() {
+			var u = navigator.userAgent;
+			if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {//安卓手机
+			window.location.href = "https://www.baidu.com/";
+			} else if (u.indexOf('iPhone') > -1) {//苹果手机
+			window.location.href = "https://www.taobao.com/";
+			}
+			}
+		</script>
 	</body>
 </html>

@@ -11,15 +11,6 @@ window.onload = function(){
 			}
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			//封装获取class 类函数
 			function getClassname(main,classname){
 	var otag = main.getElementsByTagName("*");  //获取main下面所有元素
