@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document Add By FullSpeed YangJie*/
+/*reset*/
+::-webkit-input-placeholder{color:#999;}
+input[type="text"],input[type="password"],select{-webkit-appearance:none;appearance:none;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);border-radius:0;font-family:'\5FAE\8F6F\96C5\9ED1';}
+body,ul,ol,p,h1,h2,h3,h4{margin:0;padding:0;}
+img{border:0;display:block;}
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+ol,ul{list-style:none;}
+html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body,html{-webkit-tap-highlight-color:transparent;-webkit-user-select:none; height:100%;}
+.c:after{content:'\20';display:block;height:0;line-height:0;visibility:hidden;clear:both;}
+.hide{display:none;height:0;font-size:0;line-height:0;visibility:hidden;overflow:hidden;}
+a{text-decoration:none;}
+a:focus{outline:none}
+/*page*/
+body{font:normal 12px/1.5 sans-serif;color:#4c5c16;}
+.wrapper{font-family:'\5FAE\8F6F\96C5\9ED1';background:#130603; position:relative;}
+.wrapper,.cent1_4,.cent2_1,.cent2_2,.cent2_3,.page0 .footer,.box_top{width:320px;margin:0 auto;}
+.btn{ display:block;}
+.btn,.t{text-indent:-999em;}
+.fl,.box_top img,.box_top p{ float:left;}
+.btn_gz{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/com.png) no-repeat; background-size:61px auto;}
+/*index*/
+.slide {position:relative;}
+.slide .content{width: 100%;margin: 0 auto;}
+.slide .content li{width: 100%;height:504px;}
+.slide .content li:nth-child(1){background:#010102 url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg1_1.jpg) top center no-repeat;background-size:320px 504px;}
+.slide .content li:nth-child(2),.slide .content li:nth-child(3),.slide .content li:nth-child(4),.slide .content li:nth-child(5),.slide .content li:nth-child(6),.slide .content li:nth-child(7){background:#010102 url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg1_2.jpg) top center no-repeat;background-size:320px 504px;}
+.dw1,.dw2,.dw3,.dw4,.dw5,.dw6{ display:none;}
+.page0 .footer{ position:absolute;bottom:0; left:0; height:36px; background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/foot.png) top center no-repeat; background-size:320px auto;}
+.logo{ width:75px; height:39px; padding-top:20px; padding-left:8px;}
+.ti_t span,.btn_next,.btn_pre,.lunb_t,.btn_sub,.btn_qd,.btn_down,.btn_share,.btn_lq,.btn_downyx,.btn_start,.dw h2,.btn_dq{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/btn.png) no-repeat; background-size:500px auto;}
+/*首页展示*/
+.dw0 .tit,.dw1 .box_ti h4,.dw1 .ti_t em{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/png241.png) no-repeat; background-size:500px auto;}
+.dw0 .logo{ padding-bottom:303px;}
+.dw0 .tit{ width:286px; height:26px; margin:0 auto; background-position:0 0;}
+/*题目公用*/
+.dw h2{ width:71px; height:24px; margin:18px auto 0 auto; text-indent:-999em;}
+.box_ti{ margin:24px 0 0 23px; height:210px; width:280px; overflow:hidden; text-indent:-999em;}
+.box_ti h4{ width:276px; height:46px;text-indent:-999em;}
+.xian{ display:block;  width:100%; height:1px; background:#a67f21; border-bottom:1px solid #fff; margin-top:12px; margin-bottom:1px;}
+.ti_t{height:17px; margin-top:16px;}
+.ti_t span{ width:14px; height:15px; display:block; float:left; background-position:0 0; margin-top:1px;}
+.ti_t em{ display:block; float:left; width:250px; height:17px; margin-left:4px;}
+.btn_start{ width:147px; height:39px; margin:25px auto 0 auto; background-position:-229px -67px;}
+.btn_next,.btn_pre,.btn_sub{ width:92px; height:36px; }
+.btn_next{background-position:-15px 0;}
+.btn_pre{background-position:-108px 0;margin:22px 0 0 23px;}
+.btn_sub{ background-position:-201px 0;}
+.lunb_t{ width:25px; height:13px; text-indent:-999em;}
+.dw2 .lunb_t{ background-position:0 -37px;}
+.dw3 .lunb_t{ background-position:-25px -37px;}
+.dw4 .lunb_t{ background-position:-50px -37px;}
+.dw5 .lunb_t{ background-position:-75px -37px;}
+.dw6 .lunb_t{ background-position:-100px -37px;}
+.dw_btn .lunb_t{ margin:34px 0 0 32px;}
+.dw_btn .btn_next,.dw_btn .btn_sub{ margin:22px 0 0 34px;}
+/*第一题*/
+.dw1 h2{ background-position:0 -109px;}
+.dw2 h2{ background-position:-72px -109px;}
+.dw3 h2{ background-position:-144px -109px;}
+.dw4 h2{ background-position:-216px -109px;}
+.dw5 h2{ background-position:-288px -109px;}
+.dw6 h2{ background-position:-360px -109px;}
+.dw1 .box_ti h4{ background-position:0 -27px;}
+.dw1 .ti1_t1 em{ background-position:0 -74px;}
+.dw1 .ti1_t2 em{ background-position:0 -92px;}
+.dw1 .ti1_t3 em{ background-position:0 -110px;}
+.dw1 .ti1_t4 em{ background-position:0 -128px;}
+.dw1 .ti1_t1.on em{ background-position:-250px -74px;}
+.dw1 .ti1_t2.on em{ background-position:-250px -92px;}
+.dw1 .ti1_t3.on em{ background-position:-250px -110px;}
+.dw1 .ti1_t4.on em{ background-position:-250px -128px;}
+.dw1 .btn_next{ margin:23px auto 0 auto;}
+/*第二题*/
+.dw2 .box_ti h4,.dw2 .ti_t em{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/png244.png) no-repeat; background-size:500px auto;}
+.dw2 .box_ti h4{ background-position:0 0;}
+.dw2 .ti2_t1 em{ background-position:0 -47px;}
+.dw2 .ti2_t2 em{ background-position:0 -65px;}
+.dw2 .ti2_t3 em{ background-position:0 -83px;}
+.dw2 .ti2_t4 em{ background-position:0 -101px;}
+.dw2 .ti2_t1.on em{ background-position:-250px -47px;}
+.dw2 .ti2_t2.on em{ background-position:-250px -65px;}
+.dw2 .ti2_t3.on em{ background-position:-250px -83px;}
+.dw2 .ti2_t4.on em{ background-position:-250px -101px;}
+/*第三题*/
+.dw3 .box_ti h4,.dw3 .ti_t em{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/png242.png) no-repeat; background-size:500px auto;}
+.dw3 .box_ti h4{ background-position:0 0;}
+.dw3 .ti3_t1 em{ background-position:0 -47px;}
+.dw3 .ti3_t2 em{ background-position:0 -65px;}
+.ti3_t3{ height:34px;}
+.dw3 .ti3_t3 em{ background-position:0 -83px; height:34px;}
+.dw3 .ti3_t4 em{ background-position:0 -119px; width:260px;}
+.dw3 .ti3_t1.on em{ background-position:-250px -47px;}
+.dw3 .ti3_t2.on em{ background-position:-250px -65px;}
+.dw3 .ti3_t3.on em{ background-position:-250px -83px;}
+.dw3 .ti3_t4.on em{ background-position:0 -137px;}
+/*第四题*/
+.dw4 .box_ti h4,.dw4 .ti_t em{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/png245.png) no-repeat; background-size:500px auto;}
+.dw4 .box_ti h4{ background-position:0 0;}
+.dw4 .ti4_t1 em{ background-position:0 -47px;}
+.dw4 .ti4_t2 em{ background-position:0 -65px;}
+.dw4 .ti4_t3 em{ background-position:0 -83px; width:255px;}
+.dw4 .ti4_t4 em{ background-position:0 -119px;}
+.dw4 .ti4_t1.on em{ background-position:-250px -47px;}
+.dw4 .ti4_t2.on em{ background-position:-250px -65px;}
+.dw4 .ti4_t3.on em{ background-position:0 -101px;}
+.dw4 .ti4_t4.on em{ background-position:-250px -119px;}
+/*第五题*/
+.dw5 .box_ti h4,.dw5 .ti_t em,.dw6 .box_ti h4,.dw6 .ti_t em{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/png243.png) no-repeat; background-size:500px auto;}
+.dw5 .box_ti h4{ background-position:0 0;}
+.dw5 .ti5_t1 em{ background-position:0 -47px;}
+.dw5 .ti5_t2 em{ background-position:0 -64px;}
+.dw5 .ti5_t3 em{ background-position:0 -81px;}
+.dw5 .ti5_t4 em{ background-position:0 -98px;}
+.dw5 .ti5_t1.on em{ background-position:-250px -47px;}
+.dw5 .ti5_t2.on em{ background-position:-250px -64px;}
+.dw5 .ti5_t3.on em{ background-position:-250px -81px;}
+.dw5 .ti5_t4.on em{ background-position:-250px -98px;}
+/*第六题 weigai*/
+.dw6 .box_ti h4{ background-position:0 -115px;}
+.dw6 .ti6_t1 em{ background-position:0 -162px;}
+.dw6 .ti6_t2 em{ background-position:0 -179px;}
+.dw6 .ti6_t3 em{ background-position:0 -196px;}
+.dw6 .ti6_t4,.dw6 .ti6_t4 em{ height:34px;}
+.dw6 .ti6_t4 em{ background-position:0 -213px;}
+.dw6 .ti6_t1.on em{ background-position:-250px -162px;}
+.dw6 .ti6_t2.on em{ background-position:-250px -179px;}
+.dw6 .ti6_t3.on em{ background-position:-250px -196px;}
+.dw6 .ti6_t4.on em{ background-position:-250px -213px;}
+/*提交弹出层*/
+.pop{width:178px;position:relative;display:none;outline:none;}
+.pop-cont1,.pop-cont2{width:178px;padding-top:56px; height:34px; }
+.pop-cont1{background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/tc.png) no-repeat; background-size:178px auto;}
+.pop-cont2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/zc.png) no-repeat;background-size:178px auto;}
+.pop-cont3{ width:178px; height:90px; background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/share.png) no-repeat;background-size:178px auto;}
+.pop_x{width:41px;height:39px;position:absolute;top:-2px;right:-42px; background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/tc_x.png) no-repeat; background-size:41px auto;}
+.btn_qd,.btn_down{ width:74px; height:30px; margin-left:52px;}
+.btn_qd{ background-position:-294px 0;}
+.btn_down{ background-position:-370px 0;}
+/*page01*/
+.cent1_4{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg1_4.jpg) top center no-repeat; background-size:320px auto; height:36px;}
+.cent3{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg23.jpg) top center no-repeat;background-size:320px auto; height:188px;}
+.cent2_1{ height:200px;}
+.cent2_2{ height:62px; padding-top:80px;}
+.result{ width:278px; height:51px; margin:0 auto; }
+.result p{width:278px; height:30px; background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/txr.png) no-repeat; background-size:280px auto; text-indent:-999em;}
+.cent21 .cent2_1,.cent21 .cent2_2,.cent3{ width:320px; margin:0 auto;}
+
+.cent21 .cent2_1{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_11.jpg) top center no-repeat; background-size:320px auto;}
+.cent21 .cent2_2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_12.jpg) top center no-repeat; background-size:320px auto;}
+.cent21 .result p{background-position:0 0;}
+
+.cent22 .cent2_1{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_21.jpg) top center no-repeat; background-size:320px auto;}
+.cent22 .cent2_2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_22.jpg) top center no-repeat; background-size:320px auto;}
+.cent22 .result p{background-position:0 -31px;}
+
+.cent23 .cent2_1{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_31.jpg) top center no-repeat; background-size:320px auto;}
+.cent23 .cent2_2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_32.jpg) top center no-repeat; background-size:320px auto;}
+.cent23 .result p{background-position:0 -62px;}
+
+.cent24 .cent2_1{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_41.jpg) top center no-repeat; background-size:320px auto;}
+.cent24 .cent2_2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_42.jpg) top center no-repeat; background-size:320px auto;}
+.cent24 .result p{background-position:0 -93px;}
+
+.cent25 .cent2_1{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_51.jpg) top center no-repeat; background-size:320px auto;}
+.cent25 .cent2_2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_52.jpg) top center no-repeat; background-size:320px auto;}
+.cent25 .result p{background-position:0 -124px;}
+
+.cent26 .cent2_1{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_61.jpg) top center no-repeat; background-size:320px auto;}
+.cent26 .cent2_2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_62.jpg) top center no-repeat; background-size:320px auto;}
+.cent26 .result p{background-position:0 -155px;}
+
+.cent27 .cent2_1{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_71.jpg) top center no-repeat; background-size:320px auto;}
+.cent27 .cent2_2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_72.jpg) top center no-repeat; background-size:320px auto;}
+.cent27 .result p{background-position:0 -186px;}
+
+.cent28 .cent2_1{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_81.jpg) top center no-repeat; background-size:320px auto;}
+.cent28 .cent2_2{ background:url(http://game.gtimg.cn/images/hyol/cp/a20160324hyfools/bg2_82.jpg) top center no-repeat; background-size:320px auto;}
+.cent28 .result p{background-position:0 -217px;}
+
+.btn_share{ width:100px; height:15px; background-position:0 -51px; margin:6px 0 0 179px;}
+.res_t{ font-size:11px; line-height:14px; color:#fff; font-weight:bold; padding:18px 0 0 33px; width:260px; height:28px; text-shadow:0 0 1px #000,0 0 2px #000,0 0 4px #000;}
+.res_t strong{ color:#ffcc00;}
+.btn_lq{ width:74px; height:30px; margin:23px 0 0 218px; background-position:0 -67px;}
+.btn_lq.off{ background-position:-160px -133px;}
+.btn_downyx,.btn_dq{width:147px; height:39px; margin:20px auto 0 auto; }
+.btn_downyx{ background-position:-77px -67px;}
+.btn_dq{background-position:0 -133px;}
+
+/*  |xGv00|cbbf54d18e783c6d3f16a9c4583f5f7e */
