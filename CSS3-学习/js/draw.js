@@ -4,7 +4,7 @@ var RADIUS = 8;
 var MARGIN_TOP = 60;
 var MARGIN_LEFT = 30;
 
-const endTime = new Date(2015,5,5,11,22,45)
+const endTime = new Date(2016,4,21,11,22,45)
 var cur = 0;
  
 window.onload = function() {
@@ -33,7 +33,7 @@ function render(txt) {
 	var seconds = cur % 60;
 	
 	
-	alert(hours);
+	//alert(hours);
 	
 	renderDigit( MARGIN_LEFT , MARGIN_TOP , parseInt(hours/10) , txt )
     renderDigit( MARGIN_LEFT + 15*(RADIUS+1) , MARGIN_TOP , parseInt(hours%10) , txt )

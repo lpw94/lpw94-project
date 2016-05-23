@@ -23,11 +23,15 @@
 			canvas.height = canvasH;
 			
 			
-			setInterval(function(){
+			
+			
+			timer = setInterval(function(){
 				//alert(000)
 			    render(context);
 				runball()
 				},30)
+			
+			//setInterval(timer,30)
 		};
 		function runball(){
 			ball.x += ball.vx;
