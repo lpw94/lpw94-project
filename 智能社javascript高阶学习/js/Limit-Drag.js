@@ -20,6 +20,12 @@ LimitDrag.prototype.Dragmove = function(ev){
 		   L = document.documentElement.clientWidth - this.oDiv.offsetWidth;
 	}
 	
+	if(T<0){
+		T = 0;
+	}else if(T>document.documentElement.clientHeight - this.oDiv.offsetHeight){
+		T = document.documentElement.clientHeight - this.oDiv.offsetHeight;
+	}
+	
 	this.oDiv.style.left = L + "px";
 	this.oDiv.style.top = T +"px";
 	
